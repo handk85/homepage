@@ -38,7 +38,7 @@ function objToString(item: Paper): string {
   if (item.type === "thesis") {
     return `"${item.title}", ${item.school}, ${item.year}`;
   }
-  return `${authors}, "${item.title}", ${venue}, ${item.year} ${
+  return `${authors}, "${item.title}", ${venue}, ${item.year}${
     item.note ? `, ${item.note}` : ""
   }`;
 }

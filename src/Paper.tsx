@@ -63,7 +63,7 @@ function paperToBibtex(paper: Paper) {
       return `  author={${author}}`;
     } else {
       if (item[1]) {
-        if (item[0] !== "type" && item[0] !== "id") {
+        if (item[0] !== "type" && item[0] !== "id" && item[0] !== "pdf") {
           return `  ${item[0]}={${item[1]}}`;
         }
       }
