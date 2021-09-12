@@ -8,10 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Customize for your own
 
-### Remove Google analytics code
-
-`public/index.html` conatins code snipet for Google analytics. Please remove the code snippet or replace the tracking code with yours.
-
 ### Data
 
 All your publication, service, education, and work experience should be stored in `public/data/` in YAML format.
@@ -24,6 +20,16 @@ Please update `src/Abstract.tsx` with your bio.
 ### Update Contact and CV info
 
 Please update `Contact` and `CV` functions in `src/App.tsx`.
+
+### Update `public/index.html`
+
+- Remove Google analytics
+- Update meta tags with your information
+- Remove favicons
+
+### Update `public/manifest.json`
+
+- Update `short_name`, `name`, and `icons`
 
 ## Available Scripts
 
