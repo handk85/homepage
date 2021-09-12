@@ -1,0 +1,137 @@
+---
+- id: Zhou21
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: Proceedings of the 37th IEEE international conference on software maintenance and evolution
+  year: 2021
+  serires: ICSME
+  title: Assessing Generalizability of CodeBERT
+  type: conference
+- id: Han20
+  DOI: 10.1109/SCAM51674.2020.00010
+  author:
+    - family: Han
+      given: DongGyun
+    - family: Ragkhitwetsagul
+      given: Chaiyong
+    - family: Krinke
+      given: Jens
+    - family: Paixao
+      given: Matheus
+    - family: Rosa
+      given: Giovanni
+  booktitle: Proceedings of the 20th IEEE international working conference on source code analysis and manipulation
+  pdf: scam2020.pdf
+  year: 2020
+  series: SCAM
+  pages: 43-53
+  title: Does code review really remove coding convention violations?
+  type: conference
+- id: Paixao18
+  DOI: 10.1145/3196398.3196466
+  author:
+    - family: Paixao
+      given: Matheus
+    - family: Krinke
+      given: Jens
+    - family: Han
+      given: Donggyun
+    - family: Harman
+      given: Mark
+  collection-title: MSR ’18
+  booktitle: Proceedings of the 15th international conference on mining software repositories
+  pdf: msr2018.pdf
+  site: https://crop-repo.github.io/
+  year: 2018
+  pages: 46-49
+  publisher-place: Gothenburg, Sweden
+  title: "CROP: Linking code reviews to source code changes"
+  title-short: CROP
+  series: MSR
+  type: conference
+- id: Paixao17
+  DOI: 10.1109/ASE.2017.8115622
+  author:
+    - family: Paixao
+      given: Matheus
+    - family: Krinke
+      given: Jens
+    - family: Han
+      given: DongGyun
+    - family: Ragkhitwetsagul
+      given: Chaiyong
+    - family: Harman
+      given: Mark
+  booktitle: Proceedings of the 32nd IEEE/ACM international conference on automated software engineering
+  pdf: ase2017.pdf
+  year: 2017
+  pages: 95-105
+  series: ASE
+  title: Are developers aware of the architectural impact of their changes?
+  type: conference
+- id: Kang14
+  DOI: 10.1109/ICDMW.2014.32
+  author:
+    - family: Kang
+      given: Dongyeop
+    - family: Han
+      given: Donggyun
+    - family: Park
+      given: Nahea
+    - family: Kim
+      given: Sangtae
+    - family: Kang
+      given: U.
+    - family: Lee
+      given: Soobin
+  booktitle: Proceedings of the IEEE international conference on data mining workshop
+  pdf: icdm2014.pdf
+  year: 2014
+  pages: 1211-1214
+  series: ICDM
+  title: "Eventera: Real-time event recommendation system from massive heterogeneous online media"
+  title-short: Eventera
+  type: conference
+- id: Tao14
+  DOI: 10.1109/ICSME.2014.49
+  author:
+    - family: Tao
+      given: Yida
+    - family: Han
+      given: Donggyun
+    - family: Kim
+      given: Sunghun
+  booktitle: Proceedings of the 30th IEEE international conference on software maintenance and evolution
+  pdf: icsme2014.pdf
+  year: 2014
+  series: ICSME
+  pages: 271-280
+  title: "Writing acceptable patches: An empirical study of open source project patches"
+  title-short: Writing acceptable patches
+  type: conference
+- id: Lee11
+  DOI: 10.1145/2025113.2025156
+  author:
+    - family: Lee
+      given: Taek
+    - family: Nam
+      given: Jaechang
+    - family: Han
+      given: DongGyun
+    - family: Kim
+      given: Sunghun
+    - family: In
+      given: Hoh Peter
+  series: ESEC/FSE
+  booktitle: Proceedings of the 19th ACM SIGSOFT symposium and the 13th european conference on foundations of software engineering
+  pdf: fse2011.pdf
+  year: 2011
+  pages: 311-321
+  publisher-place: Szeged, Hungary
+  title: Micro interaction metrics for defect prediction
+  type: paper-conference

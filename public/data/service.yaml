@@ -1,0 +1,44 @@
+---
+service:
+  - title: Program Committee (Technical Papers)
+    venue: Mining Software Repositories (MSR) Conference
+    date: "2022"
+  - title: Keynote
+    venue:
+      18th IEEE/ACIS International Virtual Conference on Software Engineering,
+      Management and Applications (SERA2021)
+    date: "2021"
+  - title: Reviewer
+    venue: "Journal of Software: Evolution and Process (JSME)"
+    date: Jun. 2021
+  - title: Teaching Asistnant
+    venue: Introduction to Scientific Programming in Python
+    date: Apr. 2016
+  - title: Teaching Asistnant
+    venue: Tools and Environment
+    date: Term 1, Academic year 2015/16
+  - title: Reviewer
+    venue: Information and Software Technology (IST)
+    date: Mar. 2016
+  - title: Student Volunteer
+    venue:
+      "10th Joint Meeting of the European Software Engineering Conference and the
+      ACM SIGSOFT Symposium on the Foundations of Software Engineering "
+    date: "2015"
+subreview:
+  - QRS2021
+  - ASE2021
+  - ICSME2021
+  - MSR2018
+  - ICSME2017
+  - MSR2017
+  - SANER2017
+  - ICSME2016
+  - SCAM2016
+  - SQJ2016
+  - ICSME2015
+  - ESEC/FSE2013
+  - ICSE2011
+  - ESEC/FSE2011
+  - FSE2010
+  - ICSM2010

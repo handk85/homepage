@@ -1,0 +1,106 @@
+---
+- title: Research Scientist
+  affiliation: Singapore Management University
+  url: https://www.smu.edu.sg/
+  city: Singapore
+  country: Singapore
+  begin:
+    month: May
+    year: 2021
+- title: Software Development Engineer
+  affiliation: Amazon Web Services
+  url: https://aws.amazon.com/
+  city: Berlin
+  country: Germany
+  begin:
+    month: Sep.
+    year: 2019
+  end:
+    month: Mar.
+    year: 2021
+- title: Software Development Engineer Intern
+  affiliation: Amazon Web Services
+  url: https://aws.amazon.com/
+  city: Seattle
+  country: US
+  begin:
+    month: Sep
+    year: 2018
+  end:
+    month: Dec.
+    year: 2018
+- title: Software Development Engineer Intern
+  affiliation: Amazon Web Services
+  url: https://aws.amazon.com/
+  city: Seattle
+  country: US
+  begin:
+    month: Jul.
+    year: 2017
+  end:
+    month: Sep.
+    year: 2017
+- title: Research Scientist Intern (part-time)
+  affiliation: Amazon Web Services
+  url: https://aws.amazon.com/
+  city: London
+  country: UK
+  begin:
+    month: Mar.
+    year: 2017
+  end:
+    month: Jun.
+    year: 2017
+- title: Research Scientist Intern
+  affiliation: Amazon Web Services
+  url: https://aws.amazon.com/
+  city: New York
+  country: US
+  begin:
+    month: Sep.
+    year: 2016
+  end:
+    month: Dec.
+    year: 2016
+- title: Researcher
+  affiliation: KAIST Institute for IT Convergence
+  url: http://itc.kaist.ac.kr/
+  city: Daejeon
+  country: Korea
+  begin:
+    month: Feb.
+    year: 2013
+  end:
+    month: Apr.
+    year: 2015
+- title: Intern
+  affiliation: Floo
+  city: Seoul
+  country: Korea
+  begin:
+    month: Jan.
+    year: 2010
+  end:
+    month: Feb.
+    year: 2010
+- title: Intern
+  affiliation: Daum Communications
+  city: Jeju
+  country: Korea
+  begin:
+    month: Jul.
+    year: 2009
+  end:
+    month: Nov.
+    year: 2009
+- title: Sergeant
+  affiliation: 61st Infantry Division Korea Army
+  city: Incheoon
+  country: Korea
+  begin:
+    month: Dec.
+    year: 2004
+  end:
+    month: Dec.
+    year: 2006
+
