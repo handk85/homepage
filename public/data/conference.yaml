@@ -25,7 +25,7 @@
     - family: Rosa
       given: Giovanni
   booktitle: IEEE 20th International Working Conference on Source Code Analysis and Manipulation (SCAM)
-  pdf: scam2020.pdf
+  pdf: https://donggyun.com/pdfs/scam2020.pdf
   year: 2020
   pages: 43-53
   title: Does code review really remove coding convention violations?
@@ -41,7 +41,7 @@
     - family: Harman
       given: Mark
   booktitle: Proceedings of the 15th International Conference on Mining Software Repositories
-  pdf: msr2018.pdf
+  pdf: https://donggyun.com/pdfs/msr2018.pdf
   site: https://crop-repo.github.io/
   year: 2018
   pages: 46-49
@@ -62,7 +62,7 @@
     - family: Harman
       given: Mark
   booktitle: 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)
-  pdf: ase2017.pdf
+  pdf: https://donggyun.com/pdfs/ase2017.pdf
   year: 2017
   pages: 95-105
   title: Are developers aware of the architectural impact of their changes?
@@ -82,7 +82,7 @@
     - family: Lee
       given: Soobin
   booktitle: IEEE International Conference on Data Mining Workshop
-  pdf: icdm2014.pdf
+  pdf: https://donggyun.com/pdfs/icdm2014.pdf
   year: 2014
   pages: 1211-1214
   title: "Eventera: Real-time event recommendation system from massive heterogeneous online media"
@@ -96,7 +96,7 @@
     - family: Kim
       given: Sunghun
   booktitle: IEEE International Conference on Software Maintenance and Evolution
-  pdf: icsme2014.pdf
+  pdf: https://donggyun.com/pdfs/icsme2014.pdf
   year: 2014
   pages: 271-280
   title: "Writing acceptable patches: An empirical study of open source project patches"
@@ -116,7 +116,7 @@
       given: Hoh Peter
   series: ESEC/FSE `11
   booktitle: Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering
-  pdf: fse2011.pdf
+  pdf: https://donggyun.com/pdfs/fse2011.pdf
   year: 2011
   pages: 311-321
   publisher-place: Szeged, Hungary

@@ -13,7 +13,7 @@
     - family: Harman
       given: Mark
   journal: IEEE Transactions on Software Engineering
-  pdf: tse2019.pdf
+  pdf: https://donggyun.com/pdfs/tse2019.pdf
   issue: "5"
   year: 2021
   pages: 1041-1059
@@ -33,7 +33,7 @@
     - family: Peter In
       given: Hoh
   journal: IEEE Transactions on Software Engineering
-  pdf: tse2016.pdf
+  pdf: https://donggyun.com/pdfs/tse2016.pdf
   issue: "11"
   year: 2016
   page: 1015-1035
