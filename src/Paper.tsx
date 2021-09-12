@@ -4,8 +4,8 @@ interface Author {
   given: string;
 }
 
-export type PaperType = "journal" | "conference" | "thesis";
-export type Paper = Journal | Conference | Thesis;
+export type PaperType = "journal" | "conference" | "thesis" | "book";
+export type Paper = Journal | Conference | Thesis | Book;
 
 export interface Publication {
   id: string;
@@ -46,6 +46,11 @@ export interface Thesis extends Publication {
   school: string;
 }
 
+export interface Book extends Publication {
+  type: "book";
+  publisher: string;
+}
+
 function paperToBibtex(paper: Paper) {
   return Object.entries(paper).map((item) => {
     if (item[0] === "author") {
@@ -82,6 +87,8 @@ ${paperToBibtex(paper)
   .join(",\n")}
 }`;
     case "thesis":
+      return "";
+    case "book":
       return "";
   }
 }

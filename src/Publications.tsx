@@ -7,12 +7,6 @@ import { faBook, faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { Paper, generateBibtex, PaperType } from "./Paper";
 import { load } from "js-yaml";
 
-const YAML_LOCATIONS: Record<PaperType, string> = {
-  conference: "./data/proceedings.yaml",
-  journal: "./data/journals.yaml",
-  thesis: "./data/thesis.yaml",
-};
-
 function generateLink(url: string, name: string): ReactElement {
   return <a href={url}>[{name}]</a>;
 }
@@ -25,6 +19,8 @@ function getVenue(item: Paper) {
       return item.booktitle;
     case "thesis":
       return item.school;
+    case "book":
+      return item.publisher;
   }
 }
 
@@ -33,7 +29,7 @@ function getAuthors(item: Paper) {
     return `${author.given[0]}. ${author.family}`;
   });
   authors[authors.length - 1] = `and ${authors[authors.length - 1]}`;
-  return authors.join(", ");
+  return authors.length === 2 ? authors.join(" ") : authors.join(", ");
 }
 
 function objToString(item: Paper): string {
@@ -42,7 +38,9 @@ function objToString(item: Paper): string {
   if (item.type === "thesis") {
     return `"${item.title}", ${item.school}, ${item.year}`;
   }
-  return `${authors}, "${item.title}", In ${venue}, ${item.year}`;
+  return `${authors}, "${item.title}", ${venue}, ${item.year} ${
+    item.note ? `, ${item.note}` : ""
+  }`;
 }
 
 function BibtexModal(props: any) {
@@ -98,7 +96,7 @@ function Papers(props: { papers: Paper[] }) {
               {item.pdf &&
                 generateLink(`https://donggyun.com/pdfs/${item.pdf}`, "PDF")}
               {item.DOI && generateLink(`https://doi.org/${item.DOI}`, "DOI")}
-              {item.type !== "thesis" && (
+              {item.type !== "thesis" && item.type !== "book" && (
                 <a
                   href=""
                   onClick={(e) => {
@@ -141,7 +139,7 @@ function PaperGroup(props: { paperType: PaperType }) {
 
   useEffect(() => {
     (async function () {
-      const data = await loadYaml(YAML_LOCATIONS[paperType]);
+      const data = await loadYaml(`./data/${paperType}.yaml`);
       data.forEach((item) => {
         item.type = paperType;
       });
@@ -171,13 +169,7 @@ function Publications() {
         <PaperGroup paperType="journal" />
         <PaperGroup paperType="conference" />
         <PaperGroup paperType="thesis" />
-        <h4>Book</h4>
-        <ul>
-          <li>
-            Authored by D. Mark and J. LaMarche, Translated by D. Han (English
-            to Korean), "More iPhone 3 Development", Wikibooks, 2010
-          </li>
-        </ul>
+        <PaperGroup paperType="book" />
       </>
     </>
   );

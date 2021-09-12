@@ -17,6 +17,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 All your publication, service, education, and work experience should be stored in `public/data/` in YAML format.
 Then, it will be automatically rendered in the homepage.
 
+### Update bio info
+
+Please update `src/Abstract.tsx` with your bio.
+
+### Update Contact and CV info
+
+Please update `Contact` and `CV` functions in `src/App.tsx`.
+
 ## Available Scripts
 
 In the project directory, you can run:
