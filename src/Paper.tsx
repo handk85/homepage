@@ -51,6 +51,7 @@ export interface Book extends Publication {
   publisher: string;
 }
 
+const nonBibtexFields = ["type", "id", "pdf", "site"];
 function paperToBibtex(paper: Paper) {
   return Object.entries(paper).map((item) => {
     if (item[0] === "author") {
@@ -63,7 +64,7 @@ function paperToBibtex(paper: Paper) {
       return `  author={${author}}`;
     } else {
       if (item[1]) {
-        if (item[0] !== "type" && item[0] !== "id" && item[0] !== "pdf") {
+        if (!nonBibtexFields.includes(item[0])) {
           return `  ${item[0]}={${item[1]}}`;
         }
       }
