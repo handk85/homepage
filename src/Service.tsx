@@ -3,12 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
-
-interface ServiceItem {
-  title: string;
-  venue: string;
-  date: string;
-}
+import { ServiceItem } from "./Types";
 
 function Service() {
   const [service, setService] = useState<ServiceItem[]>([]);

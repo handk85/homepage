@@ -3,21 +3,7 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { ReactNode, useEffect, useState } from "react";
 import { load } from "js-yaml";
 import { Spinner } from "react-bootstrap";
-
-interface Supervisor {
-  name: string;
-  homepage?: string;
-  note?: string;
-}
-interface EducationItem {
-  degree: string;
-  department: string;
-  school: string;
-  schoolUrl: string;
-  period: string;
-  thesis?: string;
-  supervisor?: Supervisor[];
-}
+import { EducationItem } from "./Types";
 
 function Education() {
   const [education, setEducation] = useState<EducationItem[]>([]);

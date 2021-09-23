@@ -3,21 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
-
-interface ContractDate {
-  month: string;
-  year: number;
-}
-
-interface Work {
-  title: string;
-  affiliation: string;
-  url?: string;
-  city: string;
-  country: string;
-  begin: ContractDate;
-  end?: ContractDate;
-}
+import { Work } from "./Types";
 
 function WorkExperience() {
   const [work, setWork] = useState<Work[]>([]);

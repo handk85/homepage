@@ -4,7 +4,8 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faClipboard } from "@fortawesome/free-solid-svg-icons";
-import { Paper, generateBibtex, PaperType } from "./Paper";
+import { generateBibtex } from "./Paper";
+import { Paper, PaperType } from "./Types";
 import { load } from "js-yaml";
 
 function generateLink(url: string, name: string): ReactElement {
