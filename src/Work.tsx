@@ -6,7 +6,7 @@ import { load } from "js-yaml";
 import { Work } from "./Types";
 
 function WorkExperience() {
-  const [work, setWork] = useState<Work[]>([]);
+  const [work, setWork] = useState<Work[]>();
 
   useEffect(() => {
     fetch("./data/work.yaml").then(async (response) => {
@@ -16,7 +16,7 @@ function WorkExperience() {
     });
   }, []);
 
-  return work.length < 1 ? (
+  return !work ? (
     <Spinner animation="border" />
   ) : (
     <>

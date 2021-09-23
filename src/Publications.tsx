@@ -4,33 +4,12 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faClipboard } from "@fortawesome/free-solid-svg-icons";
-import { generateBibtex } from "./Paper";
+import { generateBibtex, getVenue, getAuthors } from "./Paper";
 import { Paper, PaperType } from "./Types";
 import { load } from "js-yaml";
 
 function generateLink(url: string, name: string): ReactElement {
   return <a href={url}>[{name}]</a>;
-}
-
-function getVenue(item: Paper) {
-  switch (item.type) {
-    case "journal":
-      return item.journal;
-    case "conference":
-      return item.booktitle;
-    case "thesis":
-      return item.school;
-    case "book":
-      return item.publisher;
-  }
-}
-
-function getAuthors(item: Paper) {
-  const authors: string[] = item.author.map((author) => {
-    return `${author.given[0]}. ${author.family}`;
-  });
-  authors[authors.length - 1] = `and ${authors[authors.length - 1]}`;
-  return authors.length === 2 ? authors.join(" ") : authors.join(", ");
 }
 
 function objToString(item: Paper): string {
@@ -134,7 +113,7 @@ async function loadYaml(path: string) {
 }
 
 function PaperGroup(props: { paperType: PaperType }) {
-  const [papers, setPapers] = useState<Paper[]>([]);
+  const [papers, setPapers] = useState<Paper[]>();
   const { paperType } = props;
 
   useEffect(() => {
@@ -150,11 +129,7 @@ function PaperGroup(props: { paperType: PaperType }) {
   return (
     <>
       <h4 style={{ textTransform: "capitalize" }}>{paperType}</h4>
-      {papers.length < 1 ? (
-        <Spinner animation="border" />
-      ) : (
-        <Papers papers={papers} />
-      )}
+      {!papers ? <Spinner animation="border" /> : <Papers papers={papers} />}
     </>
   );
 }

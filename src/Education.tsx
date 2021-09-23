@@ -6,7 +6,7 @@ import { Spinner } from "react-bootstrap";
 import { EducationItem } from "./Types";
 
 function Education() {
-  const [education, setEducation] = useState<EducationItem[]>([]);
+  const [education, setEducation] = useState<EducationItem[]>();
   useEffect(() => {
     fetch("./data/education.yaml").then(async (response) => {
       const text = await response.text();
@@ -20,7 +20,7 @@ function Education() {
       <h3>
         <FontAwesomeIcon icon={faGraduationCap} /> Education
       </h3>
-      {education.length < 1 ? (
+      {!education ? (
         <Spinner animation="border" />
       ) : (
         <ul>

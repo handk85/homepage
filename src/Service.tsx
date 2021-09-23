@@ -6,8 +6,8 @@ import { load } from "js-yaml";
 import { ServiceItem } from "./Types";
 
 function Service() {
-  const [service, setService] = useState<ServiceItem[]>([]);
-  const [subreview, setSubreview] = useState<string[]>([]);
+  const [service, setService] = useState<ServiceItem[]>();
+  const [subreview, setSubreview] = useState<string[]>();
 
   useEffect(() => {
     fetch("./data/service.yaml").then(async (response) => {
@@ -21,7 +21,7 @@ function Service() {
     });
   }, []);
 
-  return service.length < 1 ? (
+  return !service ? (
     <Spinner animation="border" />
   ) : (
     <>
@@ -35,10 +35,12 @@ function Service() {
           );
         })}
       </ul>
-      <p style={{ paddingLeft: "2rem" }}>
-        In addition, I was a sub-reviewer for these conferences:&nbsp;
-        {subreview && subreview.join(", ")}
-      </p>
+      {subreview && (
+        <p style={{ paddingLeft: "2rem" }}>
+          In addition, I was a sub-reviewer for these conferences:&nbsp;
+          {subreview && subreview.join(", ")}
+        </p>
+      )}
     </>
   );
 }

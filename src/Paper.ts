@@ -22,7 +22,28 @@ function paperToBibtex(paper: Paper) {
   });
 }
 
-export function generateBibtex(paper: Paper) {
+function getVenue(item: Paper) {
+  switch (item.type) {
+    case "journal":
+      return item.journal;
+    case "conference":
+      return item.booktitle;
+    case "thesis":
+      return item.school;
+    case "book":
+      return item.publisher;
+  }
+}
+
+function getAuthors(item: Paper) {
+  const authors: string[] = item.author.map((author) => {
+    return `${author.given[0]}. ${author.family}`;
+  });
+  authors[authors.length - 1] = `and ${authors[authors.length - 1]}`;
+  return authors.length === 2 ? authors.join(" ") : authors.join(", ");
+}
+
+function generateBibtex(paper: Paper) {
   switch (paper.type) {
     case "journal":
       return `@ARTICLE{${paper.id},
@@ -42,3 +63,5 @@ ${paperToBibtex(paper)
       return "";
   }
 }
+
+export { getVenue, generateBibtex, getAuthors };
