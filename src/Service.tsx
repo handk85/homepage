@@ -38,7 +38,7 @@ function Service() {
       {subreview && (
         <p style={{ paddingLeft: "2rem" }}>
           In addition, I was a sub-reviewer for these conferences:&nbsp;
-          {subreview && subreview.join(", ")}
+          {subreview.join(", ")}
         </p>
       )}
     </>

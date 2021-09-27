@@ -70,10 +70,12 @@ function App() {
         <footer style={{ marginTop: "5rem", marginBottom: "3rem" }}>
           <hr />
           <p className="text-center">
-            &copy; 2021 DongGyun Han. The source code of this homepage is
-            available at{" "}
-            <a href="https://github.com/handk85/react-homepage">GitHub</a>.
-            Please feel free to extend it for your own homepage.
+            &copy; 2021 DongGyun Han. The&nbsp;
+            <a href="https://github.com/handk85/react-homepage">
+              source code of this homepage
+            </a>
+            &nbsp;is available at Github. Please feel free to extend it for your
+            own homepage.
           </p>
         </footer>
       </Container>
