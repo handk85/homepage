@@ -75,6 +75,7 @@ interface Work {
 interface Teaching {
   title: string;
   course: string;
+  school: string;
   date: string;
 }
 

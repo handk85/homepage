@@ -1,7 +1,13 @@
 ---
 - title: Teaching Assistant
   course: Introduction to Scientific Programming in Python
-  date: Apr. 2016
+  school: UCL
+  date: 2016
 - title: Teaching Assistant
   course: Tools and Environment
-  date: Term 1, Academic year 2015/16
+  school: UCL
+  date: 2015
+- title: Teaching Assistant
+  course: Introduction to Web Development
+  school: Jeju National University
+  date: 2009

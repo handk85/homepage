@@ -61,11 +61,11 @@ function App() {
         <hr />
         <CV />
         <hr />
-        <WorkExperience />
-        <hr />
         <Publications />
         <hr />
         <Education />
+        <hr />
+        <WorkExperience />
         <hr />
         <TeachingExperience />
         <hr />
