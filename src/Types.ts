@@ -72,6 +72,12 @@ interface Work {
   end?: ContractDate;
 }
 
+interface Teaching {
+  title: string;
+  course: string;
+  date: string;
+}
+
 interface Supervisor {
   name: string;
   homepage?: string;
@@ -100,5 +106,6 @@ export type {
   ServiceItem,
   ContractDate,
   Work,
+  Teaching,
   EducationItem,
 };

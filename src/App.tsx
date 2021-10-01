@@ -3,6 +3,7 @@ import Abstract from "./Abstract";
 import Publications from "./Publications";
 import WorkExperience from "./Work";
 import Education from "./Education";
+import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInbox, faFile, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -65,6 +66,8 @@ function App() {
         <Publications />
         <hr />
         <Education />
+        <hr />
+        <TeachingExperience />
         <hr />
         <Service />
         <footer style={{ marginTop: "5rem", marginBottom: "3rem" }}>
