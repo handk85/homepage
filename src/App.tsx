@@ -13,7 +13,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
-import Banner from "./Banner";
 
 function Contact() {
   return (
@@ -55,7 +54,6 @@ function CV() {
 function App() {
   return (
     <>
-      <Banner content="I am looking for a faculty position in software engineering" />
       <Abstract />
       <Container>
         <hr />
