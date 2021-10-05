@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Customize for your own
 
+To check an example of customization, please check [the branch](https://github.com/handk85/react-homepage/tree/donggyun) in this repo
+
 ### Data
 
 All your publication, service, education, and work experience should be stored in `public/data/` in YAML format.
