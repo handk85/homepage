@@ -23,9 +23,7 @@ Please update `Contact` and `CV` functions in `src/App.tsx`.
 
 ### Update `public/index.html`
 
-- Remove Google analytics
-- Update meta tags with your information
-- Remove favicons
+Pleaese update meta tags with your information
 
 ### Update `public/manifest.json`
 
