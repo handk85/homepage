@@ -12,7 +12,7 @@ type BannerColor =
   | "light"
   | "dark";
 
-function Banner(props: { color: BannerColor; content: string }) {
+function Banner(props: { color: BannerColor; content: JSX.Element }) {
   return (
     <Navbar bg={props.color} role="banner">
       <Container>
