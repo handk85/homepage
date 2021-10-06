@@ -2,9 +2,19 @@ import { Navbar, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
-function Banner(props: { content: string }) {
+type BannerColor =
+  | "primary"
+  | "secondary"
+  | "success"
+  | "danger"
+  | "warning"
+  | "info"
+  | "light"
+  | "dark";
+
+function Banner(props: { color: BannerColor; content: string }) {
   return (
-    <Navbar bg="info" role="banner">
+    <Navbar bg={props.color} role="banner">
       <Container>
         <Navbar.Text>
           <FontAwesomeIcon icon={faBullhorn} /> {props.content}
