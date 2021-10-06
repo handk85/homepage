@@ -55,7 +55,23 @@ function CV() {
 function App() {
   return (
     <>
-      <Banner content="I am looking for a faculty position in software engineering" />
+      <Banner
+        color="success"
+        content={
+          <span>
+            I started a blog{" "}
+            <a href="https://blog.donggyun.com">https://blog.donggyun.com</a>
+          </span>
+        }
+      />
+      <Banner
+        color="info"
+        content={
+          <span>
+            I am looking for a faculty position in software engineering
+          </span>
+        }
+      />
       <Abstract />
       <Container>
         <hr />
