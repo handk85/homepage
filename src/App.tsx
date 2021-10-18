@@ -11,7 +11,6 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faOrcid,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import Banner from "./Banner";
@@ -32,13 +31,6 @@ function Contact() {
       </Button>{" "}
       <Button href="https://linkedin.com/in/handk" variant="outline-primary">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-      </Button>{" "}
-      <Button
-        href="https://orcid.org/0000-0002-8599-2197"
-        variant="outline-success"
-      >
-        <FontAwesomeIcon icon={faOrcid} />
-        ORCID
       </Button>{" "}
     </>
   );

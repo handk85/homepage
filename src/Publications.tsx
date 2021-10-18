@@ -3,10 +3,13 @@ import Spinner from "react-bootstrap/Spinner";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faClipboard } from "@fortawesome/free-solid-svg-icons";
+import { faBookOpen, faClipboard } from "@fortawesome/free-solid-svg-icons";
+import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import { generateBibtex, getVenue, getAuthors } from "./Paper";
 import { Paper, PaperType } from "./Types";
 import { load } from "js-yaml";
+
+import "academicons/css/academicons.css";
 
 function generateLink(url: string, name: string): ReactElement {
   return <a href={url}>[{name}]</a>;
@@ -134,17 +137,50 @@ function PaperGroup(props: { paperType: PaperType }) {
   );
 }
 
+function Bibliography() {
+  return (
+    <>
+      <h4>Bibliography</h4>
+      <Button
+        href="https://orcid.org/0000-0002-8599-2197"
+        variant="outline-secondary"
+      >
+        <i className="ai ai-orcid" /> ORCID
+      </Button>{" "}
+      <Button
+        href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
+        variant="outline-secondary"
+      >
+        <i className="ai ai-google-scholar" /> Google Scholar
+      </Button>{" "}
+      <Button
+        href="https://dblp.org/pid/35/10082.html"
+        variant="outline-secondary"
+      >
+        <i className="ai ai-dblp" /> DBLP
+      </Button>{" "}
+      <Button
+        href="https://academic.microsoft.com/profile/2e50hi11-f21i-4941-8020-ieg85847jg8i/handk85/"
+        variant="outline-secondary"
+      >
+        <FontAwesomeIcon icon={faMicrosoft} /> Microsoft Academic
+      </Button>
+    </>
+  );
+}
+
 function Publications() {
   return (
     <>
       <h3>
-        <FontAwesomeIcon icon={faBook} /> Publications
+        <FontAwesomeIcon icon={faBookOpen} /> Publications
       </h3>
       <>
         <PaperGroup paperType="journal" />
         <PaperGroup paperType="conference" />
         <PaperGroup paperType="thesis" />
         <PaperGroup paperType="book" />
+        <Bibliography />
       </>
     </>
   );
