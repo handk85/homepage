@@ -11,6 +11,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faOrcid,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import Banner from "./Banner";
@@ -32,6 +33,13 @@ function Contact() {
       <Button href="https://linkedin.com/in/handk" variant="outline-primary">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
       </Button>{" "}
+      <Button
+        href="https://orcid.org/0000-0002-8599-2197"
+        variant="outline-success"
+      >
+        <FontAwesomeIcon icon={faOrcid} />
+        ORCID
+      </Button>{" "}
     </>
   );
 }
@@ -44,7 +52,7 @@ function CV() {
       </h3>
       <Button
         href="https://donggyun.com/cv/DK-CV.pdf"
-        variant="outline-success"
+        variant="outline-warning"
       >
         <FontAwesomeIcon icon={faFile} /> View my CV
       </Button>
