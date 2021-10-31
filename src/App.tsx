@@ -43,7 +43,7 @@ function CV() {
         <FontAwesomeIcon icon={faUser} /> Curriculum Vitae
       </h3>
       <Button
-        href="https://donggyun.com/cv/DK-CV.pdf"
+        href="https://donggyun.com/pdfs/DK-CV.pdf"
         variant="outline-warning"
       >
         <FontAwesomeIcon icon={faFile} /> View my CV
