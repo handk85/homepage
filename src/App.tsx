@@ -6,11 +6,17 @@ import Education from "./Education";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox, faFile, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInbox,
+  faFile,
+  faUser,
+  faIdBadge,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faMicrosoft,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import Banner from "./Banner";
@@ -52,6 +58,40 @@ function CV() {
   );
 }
 
+function BibliographicProfiles() {
+  return (
+    <>
+      <h3>
+        <FontAwesomeIcon icon={faIdBadge} /> Bibliographic Profiles{" "}
+      </h3>
+      <Button
+        href="https://orcid.org/0000-0002-8599-2197"
+        variant="outline-warning"
+      >
+        <i className="ai ai-orcid" /> ORCID
+      </Button>{" "}
+      <Button
+        href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
+        variant="outline-warning"
+      >
+        <i className="ai ai-google-scholar" /> Google Scholar
+      </Button>{" "}
+      <Button
+        href="https://dblp.org/pid/35/10082.html"
+        variant="outline-warning"
+      >
+        <i className="ai ai-dblp" /> DBLP
+      </Button>{" "}
+      <Button
+        href="https://academic.microsoft.com/profile/2e50hi11-f21i-4941-8020-ieg85847jg8i/handk85/"
+        variant="outline-warning"
+      >
+        <FontAwesomeIcon icon={faMicrosoft} /> Microsoft Academic
+      </Button>
+    </>
+  );
+}
+
 function App() {
   return (
     <>
@@ -75,9 +115,11 @@ function App() {
       <Abstract />
       <Container>
         <hr />
-        <Contact />
+        <BibliographicProfiles />
         <hr />
         <CV />
+        <hr />
+        <Contact />
         <hr />
         <Publications />
         <hr />

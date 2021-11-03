@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 function Abstract() {
   return (
-    <Container style={{ marginTop: "2rem" }}>
+    <Container style={{ marginTop: "2rem", marginBottom: "1rem" }}>
       <Row>
         <Col md="auto">
           <Figure>
