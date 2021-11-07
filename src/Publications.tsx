@@ -8,8 +8,6 @@ import { generateBibtex, getVenue, getAuthors } from "./Paper";
 import { Paper, PaperType } from "./Types";
 import { load } from "js-yaml";
 
-import "academicons/css/academicons.css";
-
 function generateLink(url: string, name: string): ReactElement {
   return <a href={url}>[{name}]</a>;
 }

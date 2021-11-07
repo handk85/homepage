@@ -20,6 +20,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import Banner from "./Banner";
+import "academicons/css/academicons.css";
 
 function Contact() {
   return (
