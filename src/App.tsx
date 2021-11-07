@@ -6,13 +6,20 @@ import Education from "./Education";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox, faFile, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInbox,
+  faFile,
+  faUser,
+  faIdBadge,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faMicrosoft,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
+import "academicons/css/academicons.css";
 
 function Contact() {
   return (
@@ -31,6 +38,28 @@ function Contact() {
       <Button href="https://linkedin.com/in/handk" variant="outline-primary">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
       </Button>{" "}
+    </>
+  );
+}
+
+function BibliographicProfiles() {
+  return (
+    <>
+      <h3>
+        <FontAwesomeIcon icon={faIdBadge} /> Bibliographic Profiles{" "}
+      </h3>
+      <Button href="ORCID_PROFILE_LINK" variant="outline-warning">
+        <i className="ai ai-orcid" /> ORCID
+      </Button>{" "}
+      <Button href="GOOGLE_SCHOLAR_PROFILE_LINK" variant="outline-warning">
+        <i className="ai ai-google-scholar" /> Google Scholar
+      </Button>{" "}
+      <Button href="DBLP_PROFILE_LINK" variant="outline-warning">
+        <i className="ai ai-dblp" /> DBLP
+      </Button>{" "}
+      <Button href="MICROSOFT_ACADEMICS_PROFILE_LINK" variant="outline-warning">
+        <FontAwesomeIcon icon={faMicrosoft} /> Microsoft Academic
+      </Button>
     </>
   );
 }
@@ -60,6 +89,8 @@ function App() {
         <Contact />
         <hr />
         <CV />
+        <hr />
+        <BibliographicProfiles />
         <hr />
         <Publications />
         <hr />
