@@ -56,8 +56,8 @@ function Abstract() {
           <a href="http://cybertec.jejunu.ac.kr/profile.html">
             Prof. Hoyoung Kwak
           </a>
-          . His main research interests are code review, empirical study, AI for
-          software engineering and binary analysis.
+          . His main research interests are empirical study, AI for software
+          engineering, code review, and software binary analysis.
         </Col>
       </Row>
     </Container>
