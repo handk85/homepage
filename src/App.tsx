@@ -29,14 +29,14 @@ function Contact() {
       </h3>
       <h4>Work: dha{`n[at]s`}mu.edu.sg</h4>
       <h4>Personal: me[a{`t]`}donggyun.com</h4>
-      <Button href="https://twitter.com/handk85" variant="outline-info">
-        <FontAwesomeIcon icon={faTwitter} /> Twitter
-      </Button>{" "}
       <Button href="https://github.com/handk85" variant="outline-secondary">
         <FontAwesomeIcon icon={faGithub} /> Github
       </Button>{" "}
       <Button href="https://linkedin.com/in/handk" variant="outline-primary">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+      </Button>{" "}
+      <Button href="https://twitter.com/handk85" variant="outline-info">
+        <FontAwesomeIcon icon={faTwitter} /> Twitter
       </Button>{" "}
     </>
   );
