@@ -51,7 +51,7 @@ function CV() {
       </h3>
       <Button
         href="https://donggyun.com/pdfs/DK-CV.pdf"
-        variant="outline-warning"
+        variant="outline-success"
       >
         <FontAwesomeIcon icon={faFile} /> View my CV
       </Button>
@@ -67,25 +67,25 @@ function BibliographicProfiles() {
       </h3>
       <Button
         href="https://orcid.org/0000-0002-8599-2197"
-        variant="outline-warning"
+        variant="outline-success"
       >
         <i className="ai ai-orcid" /> ORCID
       </Button>{" "}
       <Button
         href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
-        variant="outline-warning"
+        variant="outline-success"
       >
         <i className="ai ai-google-scholar" /> Google Scholar
       </Button>{" "}
       <Button
         href="https://dblp.org/pid/35/10082.html"
-        variant="outline-warning"
+        variant="outline-success"
       >
         <i className="ai ai-dblp" /> DBLP
       </Button>{" "}
       <Button
         href="https://academic.microsoft.com/profile/2e50hi11-f21i-4941-8020-ieg85847jg8i/handk85/"
-        variant="outline-warning"
+        variant="outline-success"
       >
         <FontAwesomeIcon icon={faMicrosoft} /> Microsoft Academic
       </Button>
