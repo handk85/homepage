@@ -28,7 +28,7 @@
       given: DongGyun
     - family: Lo
       given: David
-  booktitle: IEEE International Conference on Software Maintenance and Evolution
+  booktitle: IEEE International Conference on Software Maintenance and Evolution (ICSME)
   year: 2021
   serires: ICSME
   title: Assessing Generalizability of CodeBERT
@@ -61,7 +61,7 @@
       given: Donggyun
     - family: Harman
       given: Mark
-  booktitle: Proceedings of the 15th International Conference on Mining Software Repositories
+  booktitle: Proceedings of the 15th International Conference on Mining Software Repositories (MSR)
   pdf: https://donggyun.com/pdfs/msr2018.pdf
   site: https://crop-repo.github.io/
   year: 2018
@@ -116,7 +116,7 @@
       given: Donggyun
     - family: Kim
       given: Sunghun
-  booktitle: IEEE International Conference on Software Maintenance and Evolution
+  booktitle: IEEE International Conference on Software Maintenance and Evolution (ICSME)
   pdf: https://donggyun.com/pdfs/icsme2014.pdf
   year: 2014
   pages: 271-280
@@ -136,7 +136,7 @@
     - family: In
       given: Hoh Peter
   series: ESEC/FSE `11
-  booktitle: Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering
+  booktitle: Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering (ESEC/FSE)
   pdf: https://donggyun.com/pdfs/fse2011.pdf
   year: 2011
   pages: 311-321

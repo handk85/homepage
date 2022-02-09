@@ -6,13 +6,13 @@
   period: Apr. 2015 ~ Dec. 2019
   thesis: Supporting modern code review
   supervisor:
-    - name: Prof. Jens Krinke
+    - name: Jens Krinke
       homepage: http://www0.cs.ucl.ac.uk/staff/j.krinke/
       note: first supervisor
-    - name: Prof. Mark Harman
+    - name: Mark Harman
       homepage: http://www0.cs.ucl.ac.uk/staff/M.Harman/
       note: co-second supervisor
-    - name: Prof. Federica Sarro
+    - name: Federica Sarro
       homepage: http://www0.cs.ucl.ac.uk/staff/F.Sarro/
       note: co-second supervisor
 - degree: MPhil
@@ -22,7 +22,7 @@
   period: Sep. 2010 ~ Jan. 2013
   thesis: "Writing Acceptable Patches: An Empirical Study of Open Source Project Patches"
   supervisor:
-    - name: Prof. Sung Kim
+    - name: Sung Kim
       homepage: http://www.cse.ust.hk/~hunkim
 - degree: B.Eng.
   department: Computer Engineering
@@ -30,5 +30,5 @@
   schoolUrl: http://jejunu.ac.kr/
   period: Mar. 2004 ~ Feb. 2010
   supervisor:
-    - name: Prof. Hoyoung Kwak
+    - name: Hoyoung Kwak
       homepage: http://cybertec.jejunu.ac.kr/profile.html

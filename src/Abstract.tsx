@@ -16,30 +16,27 @@ function Abstract() {
           <h2>DongGyun Han</h2>
           <h4>Research Scientist, Singapore Management University</h4>
           Dr. DongGyun Han is a research scientist (postdoc) at{" "}
+          <a href="https://soarsmu.github.io/">
+            SOftware Analytics Research (SOAR) group
+          </a>{" "}
+          and <a href="https://smc.smu.edu.sg/">Secure Mobile Centre</a> at{" "}
           <a href="https://www.smu.edu.sg">
             Singapore Management University (SMU)
           </a>
           . He is mainly working on the intersection between cybersecurity and
           software engineering under the supervision of{" "}
-          <a href="https://flyer.sis.smu.edu.sg">Prof. Debin Gao</a> and{" "}
-          <a href="http://www.mysmu.edu/faculty/davidlo/">Prof. David Lo</a>.
-          Before joining SMU, he was a software development engineer at{" "}
+          <a href="https://flyer.sis.smu.edu.sg">Debin Gao</a> and{" "}
+          <a href="http://www.mysmu.edu/faculty/davidlo/">David Lo</a>. Before
+          joining SMU, he was a software development engineer at{" "}
           <a href="https://aws.amazon.com">Amazon Web Services</a>. He completed
           his PhD at the{" "}
           <a href="http://ucl.ac.uk">University College London (UCL)</a> under
           the supervision of{" "}
-          <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/">
-            Prof. Jens Krinke
-          </a>
-          ,{" "}
-          <a href="http://www0.cs.ucl.ac.uk/staff/M.Harman/">
-            Prof. Mark Harman
-          </a>
-          , and{" "}
-          <a href="http://www0.cs.ucl.ac.uk/staff/F.Sarro/">
-            Prof. Federica Sarro
-          </a>
-          . He has worked for{" "}
+          <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/">Jens Krinke</a>,{" "}
+          <a href="http://www0.cs.ucl.ac.uk/staff/M.Harman/">Mark Harman</a>,
+          and{" "}
+          <a href="http://www0.cs.ucl.ac.uk/staff/F.Sarro/">Federica Sarro</a>.
+          He has worked for{" "}
           <a href="https://itc.kaist.ac.kr/">
             KAIST Institute for IT Convergence
           </a>{" "}
@@ -48,15 +45,13 @@ function Abstract() {
             Hong Kong University of Science and Technology (HKUST)
           </a>{" "}
           under the supervision of{" "}
-          <a href="http://www.cse.ust.hk/~hunkim">Prof. Sung Kim</a>. He
-          received B.Eng. in{" "}
+          <a href="http://www.cse.ust.hk/~hunkim">Sung Kim</a>. He received
+          B.Eng. in{" "}
           <a href="http://ce.jejunu.ac.kr">Computer Engineering Department</a>{" "}
           at <a href="http://jejunu.ac.kr">Jeju National University</a> under
           the supervision of{" "}
-          <a href="http://cybertec.jejunu.ac.kr/profile.html">
-            Prof. Hoyoung Kwak
-          </a>
-          . His main research interests are empirical study, AI for software
+          <a href="http://cybertec.jejunu.ac.kr/profile.html">Hoyoung Kwak</a>.
+          His main research interests are empirical study, AI for software
           engineering, code review, and software binary analysis.
         </Col>
       </Row>
