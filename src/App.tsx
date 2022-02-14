@@ -11,6 +11,7 @@ import {
   faFile,
   faUser,
   faIdBadge,
+  faPenFancy,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -37,6 +38,9 @@ function Contact() {
       </Button>{" "}
       <Button href="https://twitter.com/handk85" variant="outline-info">
         <FontAwesomeIcon icon={faTwitter} /> Twitter
+      </Button>{" "}
+      <Button href="https://blog.donggyun.com" variant="outline-success">
+        <FontAwesomeIcon icon={faPenFancy} /> Blog
       </Button>{" "}
     </>
   );
@@ -89,15 +93,6 @@ function BibliographicProfiles() {
 function App() {
   return (
     <>
-      <Banner
-        color="success"
-        content={
-          <span>
-            I started a blog{" "}
-            <a href="https://blog.donggyun.com">https://blog.donggyun.com</a>
-          </span>
-        }
-      />
       <Banner
         color="info"
         content={
