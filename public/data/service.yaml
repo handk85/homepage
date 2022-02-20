@@ -1,5 +1,8 @@
 ---
 service:
+  - title: Proceedings Co-Chair
+    venue: "Asia-Pacific Software Engineering Conference (APSEC)"
+    date: "2022"
   - title: Publicity Chair
     venue: International Workshop on Software Clones (IWSC)
     date: "2022"
