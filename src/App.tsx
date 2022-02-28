@@ -19,7 +19,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
-import Banner from "./Banner";
 import "academicons/css/academicons.css";
 
 function Contact() {
@@ -93,14 +92,6 @@ function BibliographicProfiles() {
 function App() {
   return (
     <>
-      <Banner
-        color="info"
-        content={
-          <span>
-            I am looking for a faculty position in software engineering
-          </span>
-        }
-      />
       <Abstract />
       <Container>
         <hr />
