@@ -15,7 +15,7 @@ function Abstract() {
         <Col>
           <h2>DongGyun Han</h2>
           <h4>Research Scientist, Singapore Management University</h4>
-          Dr. DongGyun Han is a research scientist (postdoc) at{" "}
+          Dr DongGyun Han is a research scientist (postdoc) at{" "}
           <a href="https://soarsmu.github.io/">
             SOftware Analytics Research (SOAR) group
           </a>{" "}
