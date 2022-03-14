@@ -1,4 +1,43 @@
 ---
+- id: Zhou22
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Program Comprehension (ICPC)
+  title: "Simple or Complex? Together for a More Accurate Just-In-Time Defect Predictor"
+  year: 2022
+- id: He22
+  author:
+    - family: He
+      given: Junda
+    - family: Xu
+      given: Bowen
+    - family: Yang
+      given: Zhou
+    - family: Han
+      given: DongGyun
+    - family: Yang
+      given: Chengran
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Program Comprehension (ICPC)
+  title: "PTM4Tag: Sharpening Tag Recommendation of Stack Overflow with Pre-trained Models"
+  year: 2022
+- id: Gavidia-Calderon22
+  author:
+    - family: Gavidia-Calderon
+      given: Carlos
+    - family: Han
+      given: DongGyun
+    - family: Bennaceur
+      given: Amel
+  booktitle: Proceedings of the International Conference on Mining Software Repositories (MSR)
+  title: "Quid Pro Quo: An Exploration of Reciprocity in Code Review"
+  year: 2022
 - id: Yang22
   author:
     - family: Yang
@@ -58,7 +97,7 @@
     - family: Krinke
       given: Jens
     - family: Han
-      given: Donggyun
+      given: DongGyun
     - family: Harman
       given: Mark
   booktitle: Proceedings of the 15th International Conference on Mining Software Repositories (MSR)
@@ -93,13 +132,13 @@
     - family: Kang
       given: Dongyeop
     - family: Han
-      given: Donggyun
+      given: DongGyun
     - family: Park
       given: Nahea
     - family: Kim
       given: Sangtae
     - family: Kang
-      given: U.
+      given: U
     - family: Lee
       given: Soobin
   booktitle: IEEE International Conference on Data Mining Workshop
@@ -113,7 +152,7 @@
     - family: Tao
       given: Yida
     - family: Han
-      given: Donggyun
+      given: DongGyun
     - family: Kim
       given: Sunghun
   booktitle: IEEE International Conference on Software Maintenance and Evolution (ICSME)

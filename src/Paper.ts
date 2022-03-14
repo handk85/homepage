@@ -35,9 +35,11 @@ function getVenue(item: Paper) {
   }
 }
 
-function getAuthors(item: Paper) {
+function getAuthors(item: Paper, useShortGiven: boolean = false) {
   const authors: string[] = item.author.map((author) => {
-    return `${author.given[0]}. ${author.family}`;
+    return useShortGiven
+      ? `${author.given[0]}. ${author.family}`
+      : `${author.given} ${author.family}`;
   });
   authors[authors.length - 1] = `and ${authors[authors.length - 1]}`;
   return authors.length === 2 ? authors.join(" ") : authors.join(", ");
