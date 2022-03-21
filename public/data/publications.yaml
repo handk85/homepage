@@ -10,6 +10,7 @@
   booktitle: IEEE/ACM International Conference on Program Comprehension (ICPC)
   title: "Simple or Complex? Together for a More Accurate Just-In-Time Defect Predictor"
   year: 2022
+  type: conference
 - id: He22
   author:
     - family: He
@@ -27,6 +28,7 @@
   booktitle: IEEE/ACM International Conference on Program Comprehension (ICPC)
   title: "PTM4Tag: Sharpening Tag Recommendation of Stack Overflow with Pre-trained Models"
   year: 2022
+  type: conference
 - id: Gavidia-Calderon22
   author:
     - family: Gavidia-Calderon
@@ -38,6 +40,7 @@
   booktitle: Proceedings of the International Conference on Mining Software Repositories (MSR)
   title: "Quid Pro Quo: An Exploration of Reciprocity in Code Review"
   year: 2022
+  type: conference
 - id: Yang22
   author:
     - family: Yang
@@ -58,6 +61,7 @@
   year: 2022
   serires: SANER
   title: "Aspect-Based API Review Classification: How Far Can Pre-Trained Transformer Model Go?"
+  type: conference
 - id: Zhou21
   DOI: 10.1109/ICSME52107.2021.00044
   author:
@@ -71,6 +75,7 @@
   year: 2021
   serires: ICSME
   title: Assessing Generalizability of CodeBERT
+  type: conference
 - id: Han20
   DOI: 10.1109/SCAM51674.2020.00010
   author:
@@ -89,6 +94,7 @@
   year: 2020
   pages: 43-53
   title: Does code review really remove coding convention violations?
+  type: conference
 - id: Paixao18
   DOI: 10.1145/3196398.3196466
   author:
@@ -108,6 +114,7 @@
   publisher-place: Gothenburg, Sweden
   title: "CROP: Linking code reviews to source code changes"
   series: MSR `18
+  type: conference
 - id: Paixao17
   DOI: 10.1109/ASE.2017.8115622
   author:
@@ -126,6 +133,7 @@
   year: 2017
   pages: 95-105
   title: Are developers aware of the architectural impact of their changes?
+  type: conference
 - id: Kang14
   DOI: 10.1109/ICDMW.2014.32
   author:
@@ -146,6 +154,7 @@
   year: 2014
   pages: 1211-1214
   title: "Eventera: Real-time event recommendation system from massive heterogeneous online media"
+  type: conference
 - id: Tao14
   DOI: 10.1109/ICSME.2014.49
   author:
@@ -161,6 +170,7 @@
   pages: 271-280
   title: "Writing acceptable patches: An empirical study of open source project patches"
   title-short: Writing acceptable patches
+  type: conference
 - id: Lee11
   DOI: 10.1145/2025113.2025156
   author:
@@ -181,3 +191,74 @@
   pages: 311-321
   publisher-place: Szeged, Hungary
   title: Micro interaction metrics for defect prediction
+  type: conference
+- id: Paixao19
+  DOI: 10.1109/TSE.2019.2912113
+  author:
+    - family: Paixao
+      given: Matheus
+    - family: Krinke
+      given: Jens
+    - family: Han
+      given: DongGyun
+    - family: Ragkhitwetsagul
+      given: Chaiyong
+    - family: Harman
+      given: Mark
+  journal: IEEE Transactions on Software Engineering
+  pdf: https://donggyun.com/pdfs/tse2019.pdf
+  issue: "5"
+  year: 2021
+  pages: 1041-1059
+  title: The impact of code review on architectural changes
+  volume: "47"
+  type: journal
+- id: Lee16
+  DOI: 10.1109/TSE.2016.2550458
+  author:
+    - family: Lee
+      given: Taek
+    - family: Nam
+      given: Jaechang
+    - family: Han
+      given: Donggyun
+    - family: Kim
+      given: Sunghun
+    - family: Peter In
+      given: Hoh
+  journal: IEEE Transactions on Software Engineering
+  pdf: https://donggyun.com/pdfs/tse2016.pdf
+  issue: "11"
+  year: 2016
+  page: 1015-1035
+  title: Developer micro interaction metrics for software defect prediction
+  volume: "42"
+  type: journal
+- id: Han19
+  author:
+    - family: Han
+      given: DongGyun
+  year: 2019
+  month: Dec
+  school: University College London
+  title: Supporting modern code review
+  type: thesis
+- id: Han13
+  author:
+    - family: Han
+      given: DongGyun
+  year: 2013
+  month: Jan
+  school: Hong Kong University of Science and Technology
+  title: "Writing Acceptable Patches: An Empirical Study of Open Source Project Patches"
+  type: thesis
+- title: More iPhone 3 Development (More 아이폰3 프로그래밍)
+  publisher: Wikibooks
+  year: 2010
+  author:
+    - family: Mark
+      given: David
+    - family: LaMarche
+      given: Jeff
+  note: Translated by D. Han (English to Korean)
+  type: book
