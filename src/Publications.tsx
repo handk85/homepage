@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { generateBibtex, getVenue, getAuthors } from "./Paper";
-import { Paper, PaperType } from "./Types";
+import { Paper } from "./Types";
 import { load } from "js-yaml";
 
 function generateLink(url: string, name: string): ReactElement {
@@ -16,11 +16,11 @@ function objToString(item: Paper): string {
   const venue: string = getVenue(item);
   const authors = getAuthors(item);
   if (item.type === "thesis") {
-    return `"${item.title}", ${item.school}, ${item.year}`;
+    return `[THESIS] "${item.title}", ${item.school}, ${item.year}`;
   }
-  return `${authors}, "${item.title}", ${venue}, ${item.year}${
-    item.note ? `, ${item.note}` : ""
-  }`;
+  return `[${item.type.toUpperCase()}] ${authors}, "${item.title}", ${venue}, ${
+    item.year
+  }${item.note ? `, ${item.note}` : ""}`;
 }
 
 function BibtexModal(props: any) {
@@ -66,38 +66,56 @@ function Papers(props: { papers: Paper[] }) {
   const [bibtexPaper, setBibtexPaper] = useState<Paper>();
   const { papers } = props;
 
+  const perYear: { [year: string]: Paper[] } = papers.reduce((result, item) => {
+    result[item.year] = result[item.year] || [];
+    result[item.year].push(item);
+    return result;
+  }, Object.create(null));
+
+  const years = Object.keys(perYear).sort((a, b) => parseInt(b) - parseInt(a));
   return (
     <>
-      <ul>
-        {papers.map((item) => {
-          return (
-            <li key={item.id}>
-              {objToString(item)} {item.site && generateLink(item.site, "SITE")}
-              {item.pdf && generateLink(`${item.pdf}`, "PDF")}
-              {item.DOI && generateLink(`https://doi.org/${item.DOI}`, "DOI")}
-              {item.type !== "thesis" && item.type !== "book" && (
-                <a
-                  href=""
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setModalShow(true);
-                    setBibtexPaper(item);
-                  }}
-                >
-                  [Bibtex]
-                </a>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-      {bibtexPaper && (
-        <BibtexModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-          paper={bibtexPaper}
-        />
-      )}
+      {years.map((y) => {
+        return (
+          <>
+            <h4>{y}</h4>
+            <ul>
+              {perYear[y].map((item) => {
+                return (
+                  <>
+                    <li key={item.id}>
+                      {objToString(item)}{" "}
+                      {item.site && generateLink(item.site, "SITE")}
+                      {item.pdf && generateLink(`${item.pdf}`, "PDF")}
+                      {item.DOI &&
+                        generateLink(`https://doi.org/${item.DOI}`, "DOI")}
+                      {item.type !== "thesis" && item.type !== "book" && (
+                        <a
+                          href=""
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setModalShow(true);
+                            setBibtexPaper(item);
+                          }}
+                        >
+                          [Bibtex]
+                        </a>
+                      )}
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
+            {bibtexPaper && (
+              <BibtexModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                paper={bibtexPaper}
+              />
+            )}
+          </>
+        );
+      })}
     </>
   );
 }
@@ -112,25 +130,18 @@ async function loadYaml(path: string) {
   return data;
 }
 
-function PaperGroup(props: { paperType: PaperType }) {
+function List() {
   const [papers, setPapers] = useState<Paper[]>();
-  const { paperType } = props;
 
   useEffect(() => {
     (async function () {
-      const data = await loadYaml(`./data/${paperType}.yaml`);
-      data.forEach((item) => {
-        item.type = paperType;
-      });
+      const data = await loadYaml(`./data/publications.yaml`);
       setPapers(data);
     })();
-  }, [paperType]);
+  }, []);
 
   return (
-    <>
-      <h4 style={{ textTransform: "capitalize" }}>{paperType}</h4>
-      {!papers ? <Spinner animation="border" /> : <Papers papers={papers} />}
-    </>
+    <>{!papers ? <Spinner animation="border" /> : <Papers papers={papers} />}</>
   );
 }
 
@@ -140,12 +151,7 @@ function Publications() {
       <h3>
         <FontAwesomeIcon icon={faBookOpen} /> Publications
       </h3>
-      <>
-        <PaperGroup paperType="journal" />
-        <PaperGroup paperType="conference" />
-        <PaperGroup paperType="thesis" />
-        <PaperGroup paperType="book" />
-      </>
+      <List />
     </>
   );
 }
