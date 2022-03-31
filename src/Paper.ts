@@ -35,11 +35,22 @@ function getVenue(item: Paper) {
   }
 }
 
-function getAuthors(item: Paper, useShortGiven: boolean = false) {
+function getColor(item: Paper) {
+  switch (item.type) {
+    case "journal":
+      return "danger";
+    case "conference":
+      return "primary";
+    case "thesis":
+      return "warning";
+    case "book":
+      return "warning";
+  }
+}
+
+function getAuthors(item: Paper) {
   const authors: string[] = item.author.map((author) => {
-    return useShortGiven
-      ? `${author.given[0]}. ${author.family}`
-      : `${author.given} ${author.family}`;
+    return `${author.given} ${author.family}`;
   });
   authors[authors.length - 1] = `and ${authors[authors.length - 1]}`;
   return authors.length === 2 ? authors.join(" ") : authors.join(", ");
@@ -66,4 +77,4 @@ ${paperToBibtex(paper)
   }
 }
 
-export { getVenue, generateBibtex, getAuthors };
+export { getVenue, getColor, generateBibtex, getAuthors };

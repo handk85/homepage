@@ -2,9 +2,10 @@ import { useState, useEffect, ReactElement } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faClipboard } from "@fortawesome/free-solid-svg-icons";
-import { generateBibtex, getVenue, getAuthors } from "./Paper";
+import { generateBibtex, getVenue, getColor, getAuthors } from "./Paper";
 import { Paper } from "./Types";
 import { load } from "js-yaml";
 
@@ -18,9 +19,9 @@ function objToString(item: Paper): string {
   if (item.type === "thesis") {
     return `[THESIS] "${item.title}", ${item.school}, ${item.year}`;
   }
-  return `[${item.type.toUpperCase()}] ${authors}, "${item.title}", ${venue}, ${
-    item.year
-  }${item.note ? `, ${item.note}` : ""}`;
+  return `${authors}, "${item.title}", ${venue}, ${item.year}${
+    item.note ? `, ${item.note}` : ""
+  }`;
 }
 
 function BibtexModal(props: any) {
@@ -78,12 +79,15 @@ function Papers(props: { papers: Paper[] }) {
       {years.map((y) => {
         return (
           <>
-            <h4>{y}</h4>
-            <ul>
-              {perYear[y].map((item) => {
-                return (
-                  <>
-                    <li key={item.id}>
+            <h4 style={{ paddingTop: "10px" }}>{y}</h4>
+            {perYear[y].map((item) => {
+              return (
+                <>
+                  <Card className="border-0" key={item.id}>
+                    <Card.Body
+                      className={`border-${getColor(item)}`}
+                      style={{ borderLeft: "10px solid", padding: "5px" }}
+                    >
                       {objToString(item)}{" "}
                       {item.site && generateLink(item.site, "SITE")}
                       {item.pdf && generateLink(`${item.pdf}`, "PDF")}
@@ -101,11 +105,11 @@ function Papers(props: { papers: Paper[] }) {
                           [Bibtex]
                         </a>
                       )}
-                    </li>
-                  </>
-                );
-              })}
-            </ul>
+                    </Card.Body>
+                  </Card>
+                </>
+              );
+            })}
             {bibtexPaper && (
               <BibtexModal
                 show={modalShow}
