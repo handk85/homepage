@@ -7,6 +7,9 @@
   begin:
     month: May
     year: 2021
+  end:
+    month: May
+    year: 2022
 - title: Software Development Engineer
   affiliation: Amazon Web Services
   url: https://aws.amazon.com/
@@ -103,4 +106,3 @@
   end:
     month: Dec.
     year: 2006
-

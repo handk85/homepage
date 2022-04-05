@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInbox,
   faFile,
-  faUser,
   faIdBadge,
   faPenFancy,
 } from "@fortawesome/free-solid-svg-icons";
@@ -20,6 +19,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import "academicons/css/academicons.css";
+import Banner from "./Banner";
 
 function Contact() {
   return (
@@ -27,8 +27,13 @@ function Contact() {
       <h3>
         <FontAwesomeIcon icon={faInbox} /> Contact
       </h3>
-      <h4>Work: dha{`n[at]s`}mu.edu.sg</h4>
-      <h4>Personal: me[a{`t]`}donggyun.com</h4>
+      <h4>mail: me[a{`t]`}donggyun.com</h4>
+      <Button
+        href="https://donggyun.com/pdfs/DK-CV.pdf"
+        variant="outline-success"
+      >
+        <FontAwesomeIcon icon={faFile} /> CV
+      </Button>{" "}
       <Button href="https://github.com/handk85" variant="outline-secondary">
         <FontAwesomeIcon icon={faGithub} /> Github
       </Button>{" "}
@@ -41,22 +46,6 @@ function Contact() {
       <Button href="https://blog.donggyun.com" variant="outline-success">
         <FontAwesomeIcon icon={faPenFancy} /> Blog
       </Button>{" "}
-    </>
-  );
-}
-
-function CV() {
-  return (
-    <>
-      <h3>
-        <FontAwesomeIcon icon={faUser} /> Curriculum Vitae
-      </h3>
-      <Button
-        href="https://donggyun.com/pdfs/DK-CV.pdf"
-        variant="outline-success"
-      >
-        <FontAwesomeIcon icon={faFile} /> View my CV
-      </Button>
     </>
   );
 }
@@ -92,14 +81,21 @@ function BibliographicProfiles() {
 function App() {
   return (
     <>
+      <Banner
+        color="success"
+        content={
+          <span>
+            I will join Royal Holloway, University of London as a Lecturer in
+            Computer Science (expect to start July 2022)
+          </span>
+        }
+      />
       <Abstract />
       <Container>
         <hr />
-        <BibliographicProfiles />
-        <hr />
-        <CV />
-        <hr />
         <Contact />
+        <hr />
+        <BibliographicProfiles />
         <hr />
         <Publications />
         <hr />
