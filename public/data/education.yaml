@@ -3,7 +3,7 @@
   department: Computer Science
   school: University College London (UCL)
   schoolUrl: http://ucl.ac.uk/
-  period: Apr. 2015–Dec. 2019
+  period: Dec. 2019
   thesis: Supporting modern code review
   supervisor:
     - name: Jens Krinke
@@ -19,7 +19,7 @@
   department: Computer Science & Engineering
   school: Hong Kong University of Science & Technology (HKUST)
   schoolUrl: http://www.ust.hk/
-  period: Sep. 2010–Jan. 2013
+  period: Jan. 2013
   thesis: "Writing Acceptable Patches: An Empirical Study of Open Source Project Patches"
   supervisor:
     - name: Sung Kim
@@ -28,7 +28,7 @@
   department: Computer Engineering
   school: Jeju National University
   schoolUrl: http://jejunu.ac.kr/
-  period: Mar. 2004–Feb. 2010
+  period: Feb. 2010
   supervisor:
     - name: Hoyoung Kwak
       homepage: http://cybertec.jejunu.ac.kr/profile.html
