@@ -34,7 +34,7 @@ function WorkExperience() {
                 item.affiliation
               )}
               , {item.city}, {item.country}, {item.begin.month}{" "}
-              {item.begin.year} ~{" "}
+              {item.begin.year}&#8211;
               {item.end ? `${item.end.month} ${item.end.year}` : "Present"}
             </li>
           );
