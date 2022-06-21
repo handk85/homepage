@@ -1,4 +1,12 @@
 ---
+- title: Lecturer
+  affiliation: Royal Holloway, University of London
+  url: https://www.royalholloway.ac.uk
+  city: Egham
+  country: UK
+  begin:
+    month: July
+    year: 2022
 - title: Research Scientist
   affiliation: Singapore Management University
   url: https://www.smu.edu.sg/

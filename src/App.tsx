@@ -19,7 +19,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import "academicons/css/academicons.css";
-import Banner from "./Banner";
 
 function Contact() {
   return (
@@ -27,7 +26,8 @@ function Contact() {
       <h3>
         <FontAwesomeIcon icon={faInbox} /> Contact
       </h3>
-      <h4>mail: me[a{`t]`}donggyun.com</h4>
+      <h4>Mail: DongGyun.Han@rhul.ac.uk</h4>
+      {/* <h4>mail: me[a{`t]`}donggyun.com</h4> */}
       <Button
         href="https://donggyun.com/pdfs/DK-CV.pdf"
         variant="outline-success"
@@ -81,15 +81,6 @@ function BibliographicProfiles() {
 function App() {
   return (
     <>
-      <Banner
-        color="success"
-        content={
-          <span>
-            I will join Royal Holloway, University of London as a Lecturer in
-            Computer Science (expect to start July 2022)
-          </span>
-        }
-      />
       <Abstract />
       <Container>
         <hr />

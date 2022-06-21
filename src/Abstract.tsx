@@ -14,17 +14,27 @@ function Abstract() {
         </Col>
         <Col>
           <h2>DongGyun Han</h2>
-          <h4>Research Scientist, Singapore Management University</h4>
-          Dr DongGyun Han is a research scientist (postdoc) at{" "}
+          <h5>Lecturer</h5>
+          <h5>Department of Computer Science</h5>
+          <h5>Royal Holloway, University of London</h5>
+          Dr DongGyun Han is a lecturer at the{" "}
+          <a href="https://www.cs.rhul.ac.uk/">
+            Department of Computer Science
+          </a>{" "}
+          at{" "}
+          <a href="https://www.royalholloway.ac.uk/">
+            Royal Holloway, University of London
+          </a>
+          . He is mainly working on software engineering research. He was a
+          research scientist (postdoc) at{" "}
           <a href="https://soarsmu.github.io/">
             SOftware Analytics Research (SOAR) group
           </a>{" "}
           and <a href="https://smc.smu.edu.sg/">Secure Mobile Centre</a> at{" "}
           <a href="https://www.smu.edu.sg">
             Singapore Management University (SMU)
-          </a>
-          . He is mainly working on the intersection between cybersecurity and
-          software engineering under the supervision of{" "}
+          </a>{" "}
+          under the supervision of{" "}
           <a href="https://flyer.sis.smu.edu.sg">Debin Gao</a> and{" "}
           <a href="http://www.mysmu.edu/faculty/davidlo/">David Lo</a>. Before
           joining SMU, he was a software development engineer at{" "}
