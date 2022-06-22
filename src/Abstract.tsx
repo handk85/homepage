@@ -17,7 +17,7 @@ function Abstract() {
           <h5>Lecturer</h5>
           <h5>Department of Computer Science</h5>
           <h5>Royal Holloway, University of London</h5>
-          Dr DongGyun Han is a lecturer at the{" "}
+          Dr DongGyun Han is a lecturer (assistant professor) at the{" "}
           <a href="https://www.cs.rhul.ac.uk/">
             Department of Computer Science
           </a>{" "}
@@ -25,8 +25,10 @@ function Abstract() {
           <a href="https://www.royalholloway.ac.uk/">
             Royal Holloway, University of London
           </a>
-          . He is mainly working on software engineering research. He was a
-          research scientist (postdoc) at{" "}
+          . He is mainly working on software engineering research. His main
+          research interests are empirical study, AI for software engineering
+          (AI4SE), code review, and software binary analysis. He was a research
+          scientist (postdoc) at{" "}
           <a href="https://soarsmu.github.io/">
             SOftware Analytics Research (SOAR) group
           </a>{" "}
@@ -61,8 +63,6 @@ function Abstract() {
           at <a href="http://jejunu.ac.kr">Jeju National University</a> under
           the supervision of{" "}
           <a href="http://cybertec.jejunu.ac.kr/profile.html">Hoyoung Kwak</a>.
-          His main research interests are empirical study, AI for software
-          engineering (AI4SE), code review, and software binary analysis.
         </Col>
       </Row>
     </Container>
