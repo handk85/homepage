@@ -46,6 +46,22 @@ function Contact() {
       <Button href="https://blog.donggyun.com" variant="outline-success">
         <FontAwesomeIcon icon={faPenFancy} /> Blog
       </Button>{" "}
+      <br />
+      <br />
+      <h4>Address:</h4>
+      <p>Room 1-14, Bedford Building,</p>
+      <p>Department of Computer Science,</p>
+      <p>Royal Holloway, University of London,</p>
+      <p> Egham, Surrey, TW20 0EX</p>
+      <iframe
+        title="Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.5589140293466!2d-0.563987992603464!3d51.42582166751183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe27e78fa7%3A0x88d76e327fbab9c1!2sBedford%20Building!5e0!3m2!1sen!2suk!4v1656672103368!5m2!1sen!2suk"
+        width="100%"
+        height="400em"
+        style={{ border: 0 }}
+        allowFullScreen={false}
+        loading="lazy"
+      ></iframe>
     </>
   );
 }
@@ -84,8 +100,6 @@ function App() {
       <Abstract />
       <Container>
         <hr />
-        <Contact />
-        <hr />
         <BibliographicProfiles />
         <hr />
         <Publications />
@@ -97,6 +111,8 @@ function App() {
         <TeachingExperience />
         <hr />
         <Service />
+        <hr />
+        <Contact />
         <footer style={{ marginTop: "5rem", marginBottom: "3rem" }}>
           <hr />
           <p className="text-center">
