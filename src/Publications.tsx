@@ -155,6 +155,30 @@ function Publications() {
       <h3>
         <FontAwesomeIcon icon={faBookOpen} /> Publications
       </h3>
+      <>
+        <br />
+        <h4>Bibliographic Profiles</h4>
+        <Button
+          href="https://orcid.org/0000-0002-8599-2197"
+          variant="outline-success"
+        >
+          <i className="ai ai-orcid" /> ORCID
+        </Button>{" "}
+        <Button
+          href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
+          variant="outline-success"
+        >
+          <i className="ai ai-google-scholar" /> Google Scholar
+        </Button>{" "}
+        <Button
+          href="https://dblp.org/pid/35/10082.html"
+          variant="outline-success"
+        >
+          <i className="ai ai-dblp" /> DBLP
+        </Button>
+        <br />
+        <br />
+      </>
       <List />
     </>
   );

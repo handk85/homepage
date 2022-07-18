@@ -6,12 +6,7 @@ import Education from "./Education";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInbox,
-  faFile,
-  faIdBadge,
-  faPenFancy,
-} from "@fortawesome/free-solid-svg-icons";
+import { faInbox, faFile, faPenFancy } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
@@ -66,41 +61,11 @@ function Contact() {
   );
 }
 
-function BibliographicProfiles() {
-  return (
-    <>
-      <h3>
-        <FontAwesomeIcon icon={faIdBadge} /> Bibliographic Profiles{" "}
-      </h3>
-      <Button
-        href="https://orcid.org/0000-0002-8599-2197"
-        variant="outline-success"
-      >
-        <i className="ai ai-orcid" /> ORCID
-      </Button>{" "}
-      <Button
-        href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
-        variant="outline-success"
-      >
-        <i className="ai ai-google-scholar" /> Google Scholar
-      </Button>{" "}
-      <Button
-        href="https://dblp.org/pid/35/10082.html"
-        variant="outline-success"
-      >
-        <i className="ai ai-dblp" /> DBLP
-      </Button>
-    </>
-  );
-}
-
 function App() {
   return (
     <>
       <Abstract />
       <Container>
-        <hr />
-        <BibliographicProfiles />
         <hr />
         <Publications />
         <hr />

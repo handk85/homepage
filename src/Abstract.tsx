@@ -1,16 +1,13 @@
 import Container from "react-bootstrap/Container";
-import Figure from "react-bootstrap/Figure";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Abstract() {
   return (
     <Container style={{ marginTop: "2rem", marginBottom: "1rem" }}>
-      <Row>
+      <Row className="align-items-center">
         <Col md="auto">
-          <Figure>
-            <Figure.Image width={200} alt="DongGyun Han" src="./profile.jpg" />
-          </Figure>
+          <img src="./profile.jpg" width={200} alt="DongGyun Han" />
         </Col>
         <Col>
           <h2>DongGyun Han</h2>
