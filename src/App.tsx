@@ -6,7 +6,12 @@ import Education from "./Education";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox, faFile, faPenFancy } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInbox,
+  faFile,
+  faPenFancy,
+  faClock,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
@@ -14,6 +19,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import "academicons/css/academicons.css";
+
+function OfficeHours() {
+  return (
+    <div>
+      <h3>
+        <FontAwesomeIcon icon={faClock} /> Office Hours
+      </h3>
+      <p>
+        <b>14:00&#8211;16:00 Every Tuesday</b> based on request via mail
+      </p>
+      <p>last updated Jul 2022</p>
+    </div>
+  );
+}
 
 function Contact() {
   return (
@@ -23,12 +42,6 @@ function Contact() {
       </h3>
       <h4>Mail: DongGyun.Han@rhul.ac.uk</h4>
       {/* <h4>mail: me[a{`t]`}donggyun.com</h4> */}
-      <Button
-        href="https://donggyun.com/pdfs/DK-CV.pdf"
-        variant="outline-success"
-      >
-        <FontAwesomeIcon icon={faFile} /> CV
-      </Button>{" "}
       <Button href="https://github.com/handk85" variant="outline-secondary">
         <FontAwesomeIcon icon={faGithub} /> Github
       </Button>{" "}
@@ -40,6 +53,12 @@ function Contact() {
       </Button>{" "}
       <Button href="https://blog.donggyun.com" variant="outline-success">
         <FontAwesomeIcon icon={faPenFancy} /> Blog
+      </Button>{" "}
+      <Button
+        href="https://donggyun.com/pdfs/DK-CV.pdf"
+        variant="outline-success"
+      >
+        <FontAwesomeIcon icon={faFile} /> CV
       </Button>{" "}
       <br />
       <br />
@@ -67,6 +86,10 @@ function App() {
       <Abstract />
       <Container>
         <hr />
+        <OfficeHours />
+        <hr />
+        <Contact />
+        <hr />
         <Publications />
         <hr />
         <Education />
@@ -76,8 +99,6 @@ function App() {
         <TeachingExperience />
         <hr />
         <Service />
-        <hr />
-        <Contact />
         <footer style={{ marginTop: "5rem", marginBottom: "3rem" }}>
           <hr />
           <p className="text-center">
