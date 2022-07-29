@@ -27,9 +27,9 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
       <p>
-        <b>14:00&#8211;16:00 Every Tuesday</b> based on request via mail
+        <b>14:00&#8211;16:00 Every Tuesday</b>
       </p>
-      <p>last updated Jul 2022</p>
+      <p>Upon request via mail</p>
     </div>
   );
 }
@@ -63,13 +63,13 @@ function Contact() {
       <br />
       <br />
       <h4>Address:</h4>
-      <p>Room 1-14, Bedford Building,</p>
+      <p>Room 0-14, McCrea Building,</p>
       <p>Department of Computer Science,</p>
       <p>Royal Holloway, University of London,</p>
       <p> Egham, Surrey, TW20 0EX</p>
       <iframe
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.5589140293466!2d-0.563987992603464!3d51.42582166751183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe27e78fa7%3A0x88d76e327fbab9c1!2sBedford%20Building!5e0!3m2!1sen!2suk!4v1656672103368!5m2!1sen!2suk"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.774438575285!2d-0.5651530670257586!3d51.425569988794315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876772fe423337f%3A0x2337180a1e018f1!2sMcCrea%20Building!5e0!3m2!1sen!2suk!4v1659102801074!5m2!1sen!2suk"
         width="100%"
         height="400em"
         style={{ border: 0 }}
