@@ -1,4 +1,22 @@
 ---
+- id: Zhang22
+  author:
+    - family: Zhang
+      given: Ting
+    - family: Irsan
+      given: Ivana Clairine
+    - family: Thung
+      given: Ferdian
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+    - family: Jiang
+      given: Lingxiao
+  booktitle: IEEE International Conference on Software Maintenance and Evolution (ICSME)
+  title: Automatic Pull Request Title Generation
+  year: 2022
+  type: conference
 - id: Zhou22
   author:
     - family: Zhou
