@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-dark-4/dist/bootstrap-dark.css";
+import "bootstrap-dark-5/dist/css/bootstrap-dark.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
