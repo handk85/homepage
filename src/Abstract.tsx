@@ -1,6 +1,13 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
+
+function playFirstName() {
+  var audio = new Audio("donggyun.m4a");
+  audio.play();
+}
 
 function Abstract() {
   return (
@@ -10,7 +17,13 @@ function Abstract() {
           <img src="./profile.jpg" width={200} alt="DongGyun Han" />
         </Col>
         <Col>
-          <h2>DongGyun Han</h2>
+          <h2>
+            DongGyun
+            <sup style={{ fontSize: "60%" }}>
+              <FontAwesomeIcon icon={faVolumeUp} onClick={playFirstName} />
+            </sup>{" "}
+            Han
+          </h2>
           <h5>Lecturer</h5>
           <h5>Department of Computer Science</h5>
           <h5>Royal Holloway, University of London</h5>
