@@ -1,4 +1,51 @@
 ---
+- id: Yang22ASE
+  author:
+    - family: Yang
+      given: Chengran
+    - family: Xu
+      given: Bowen
+    - family: Thung
+      given: Ferdian
+    - family: Shi
+      given: Yucen
+    - family: Zhang
+      given: Ting
+    - family: Yang
+      given: Zhou
+    - family: Zhou
+      given: Xin
+    - family: Shi
+      given: Jieke
+    - family: He
+      given: Junda
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: 37th IEEE/ACM International Conference on Automated Software Engineering (ASE)
+  title: "Answer Summarization for Technical Queries: Benchmark and New Approach"
+  year: 2022
+  type: conference
+- id: Zhang22FseDemo
+  author:
+    - family: Zhang
+      given: Ting
+    - family: Irsan
+      given: Ivana Clairine
+    - family: Thung
+      given: Ferdian
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+    - family: Jiang
+      given: Lingxiao
+  booktitle: European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)
+  title: "iTiger: An Automatic Issue Title Generation Tool"
+  year: 2022
+  note: Demonstrations Track
+  type: conference
 - id: Zhang22
   author:
     - family: Zhang
@@ -132,6 +179,7 @@
   publisher-place: Gothenburg, Sweden
   title: "CROP: Linking code reviews to source code changes"
   series: MSR `18
+  note: Data Showcase Track
   type: conference
 - id: Paixao17
   DOI: 10.1109/ASE.2017.8115622
@@ -203,7 +251,7 @@
     - family: In
       given: Hoh Peter
   series: ESEC/FSE `11
-  booktitle: Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering (ESEC/FSE)
+  booktitle: European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)
   pdf: https://donggyun.com/pdfs/fse2011.pdf
   year: 2011
   pages: 311-321
