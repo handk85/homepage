@@ -20,7 +20,7 @@ function objToString(item: Paper): string {
     return `[THESIS] "${item.title}", ${item.school}, ${item.year}`;
   }
   return `${authors}, "${item.title}", ${venue}, ${item.year}${
-    item.note ? `, ${item.note}` : ""
+    item.note ? ` (${item.note})` : ""
   }`;
 }
 

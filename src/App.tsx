@@ -66,7 +66,7 @@ function Contact() {
       <p>Room 0-14, McCrea Building,</p>
       <p>Department of Computer Science,</p>
       <p>Royal Holloway, University of London,</p>
-      <p> Egham, Surrey, TW20 0EX</p>
+      <p>Egham, Surrey, TW20 0EX</p>
       <iframe
         title="Map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.774438575285!2d-0.5651530670257586!3d51.425569988794315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876772fe423337f%3A0x2337180a1e018f1!2sMcCrea%20Building!5e0!3m2!1sen!2suk!4v1659102801074!5m2!1sen!2suk"
