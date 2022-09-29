@@ -27,9 +27,12 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
       <p>
-        <b>14:00&#8211;16:00 Every Tuesday</b>
+        <b>14:00&#8211;16:00 Every Tuesday (Autumn Term, 2022)</b>
       </p>
-      <p>Upon request via mail</p>
+      <ul>
+        <li>Upon request via mail</li>
+        <li>First come, first served</li>
+      </ul>
     </div>
   );
 }
@@ -41,7 +44,9 @@ function Contact() {
         <FontAwesomeIcon icon={faInbox} /> Contact
       </h3>
       <h4>Mail: DongGyun.Han@rhul.ac.uk</h4>
-      {/* <h4>mail: me[a{`t]`}donggyun.com</h4> */}
+      <Button href="https://blog.donggyun.com" variant="outline-success">
+        <FontAwesomeIcon icon={faPenFancy} /> Blog
+      </Button>{" "}
       <Button href="https://github.com/handk85" variant="outline-secondary">
         <FontAwesomeIcon icon={faGithub} /> Github
       </Button>{" "}
@@ -50,9 +55,6 @@ function Contact() {
       </Button>{" "}
       <Button href="https://twitter.com/handk85" variant="outline-info">
         <FontAwesomeIcon icon={faTwitter} /> Twitter
-      </Button>{" "}
-      <Button href="https://blog.donggyun.com" variant="outline-success">
-        <FontAwesomeIcon icon={faPenFancy} /> Blog
       </Button>{" "}
       <Button
         href="https://donggyun.com/pdfs/DK-CV.pdf"
