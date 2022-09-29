@@ -1,11 +1,12 @@
 DOMAIN=donggyun.com
 
+# Build
+npm run build
+
 #Clean S3 static assets
 aws s3 rm s3://${DOMAIN}/static/js/ --recursive
 aws s3 rm s3://${DOMAIN}/static/css/ --recursive
 
-# Build
-npm run build
 # Upload the artifact
 aws s3 sync build s3://${DOMAIN} --exclude "icons/*"
 
