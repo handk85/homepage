@@ -57,7 +57,7 @@ function Contact() {
         <FontAwesomeIcon icon={faTwitter} /> Twitter
       </Button>{" "}
       <Button
-        href="https://donggyun.com/pdfs/DK-CV.pdf"
+        href="https://donggyun.com/pdfs/CV-DongGyun.pdf"
         variant="outline-success"
       >
         <FontAwesomeIcon icon={faFile} /> CV
