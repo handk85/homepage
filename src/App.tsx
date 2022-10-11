@@ -105,7 +105,7 @@ function App() {
           <hr />
           <p className="text-center">
             &copy; 2021 DongGyun Han. The&nbsp;
-            <a href="https://github.com/handk85/react-homepage">
+            <a href="https://github.com/handk85/academic-homepage">
               source code of this homepage
             </a>
             &nbsp;is available at Github. Please feel free to extend it for your
