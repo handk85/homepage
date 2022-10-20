@@ -53,7 +53,7 @@ function Contact() {
       <Button href="https://linkedin.com/in/handk" variant="outline-primary">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
       </Button>{" "}
-      <Button href="https://twitter.com/handk85" variant="outline-info">
+      <Button href="https://twitter.com/dr_d_han" variant="outline-info">
         <FontAwesomeIcon icon={faTwitter} /> Twitter
       </Button>{" "}
       <Button
