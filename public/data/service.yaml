@@ -1,6 +1,9 @@
 ---
 service:
-  - title: Program Committee (Technical Papers)
+  - title: Program Committee
+    venue: International Conference on Program Comprehension (ICPC)
+    date: "2023"
+  - title: Program Committee
     venue: Mining Software Repositories (MSR) Conference
     date: "2023"
   - title: Reviewer
@@ -15,7 +18,7 @@ service:
   - title: Publicity Chair
     venue: International Workshop on Software Clones (IWSC)
     date: "2022"
-  - title: Program Committee (Technical Papers)
+  - title: Program Committee
     venue: Mining Software Repositories (MSR) Conference
     date: "2022"
   - title: Reviewer
