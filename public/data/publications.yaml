@@ -1,4 +1,26 @@
 ---
+- id: Zhang22Tosem
+  author:
+    - family: Zhang
+      given: Ting
+    - family: Han
+      given: DongGyun
+    - family: Vinayakarao
+      given: Venkatesh
+    - family: Irsan
+      given: Ivana Clairine
+    - family: Xu
+      given: Bowen
+    - family: Thung
+      given: Ferdian
+    - family: Lo
+      given: David
+    - family: Jiang
+      given: Lingxiao
+  journal: ACM Transactions on Software Engineering and Methodology
+  title: "Duplicate Bug Report Detection: How Far Are We?"
+  year: 2022
+  type: journal
 - id: Yang22ASE
   author:
     - family: Yang
