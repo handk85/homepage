@@ -7,6 +7,9 @@ service:
     venue: Mining Software Repositories (MSR) Conference
     date: "2023"
   - title: Reviewer
+    venue: "Empirical Software Engineering (EMSE)"
+    date: Nov 2022
+  - title: Reviewer
     venue: "Journal of Software: Evolution and Process (JSME)"
     date: May 2022
   - title: Reviewer
