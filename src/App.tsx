@@ -27,7 +27,7 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
       <p>
-        <b>14:00&#8211;16:00 Every Tuesday (Autumn Term, 2022)</b>
+        <b>14:00&#8211;16:00 Every Tuesday (Academic Year 2022/23)</b>
       </p>
       <ul>
         <li>Upon request via mail</li>
