@@ -1,25 +1,19 @@
 ---
-- title: Advisor
-  course: Individual Projects
+- course: CS1821/CS1822/DC1821 Programming Laboratory
   school: Royal Holloway, University of London
-  date: 2022
-- title: Advisor
-  course: CS1860/CS2865 Mathematical Structures (Tutorial)
+  date: 2022/23
+- course: CS1870 Machine Fundamentals (Tutorial)
   school: Royal Holloway, University of London
-  date: 2022
-- title: Instructor (hands-on session)
-  course: Software Mining and Analysis
+  date: 2022/23
+- course: CS1860 Mathematical Structures (Tutorial)
+  school: Royal Holloway, University of London
+  date: 2022/23
+- course: Software Mining and Analysis (hands-on session)
   school: Singapore Data Science Consortium
   date: 2021
-- title: Teaching Assistant
-  course: Introduction to Scientific Programming in Python
+- course: Introduction to Scientific Programming in Python (TA)
   school: UCL
   date: 2016
-- title: Teaching Assistant
-  course: Tools and Environment
+- course: Tools and Environment (TA)
   school: UCL
   date: 2015
-- title: Teaching Assistant
-  course: Introduction to Web Development
-  school: Jeju National University
-  date: 2009

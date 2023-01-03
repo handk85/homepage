@@ -26,9 +26,7 @@ function TeachingExperience() {
       <ul>
         {teaching.map((item, i) => {
           return (
-            <li
-              key={i}
-            >{`${item.title}, ${item.course}, ${item.school}, ${item.date}`}</li>
+            <li key={i}>{`${item.course}, ${item.school}, ${item.date}`}</li>
           );
         })}
       </ul>
