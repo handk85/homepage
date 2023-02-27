@@ -1,4 +1,22 @@
 ---
+- id: Zhou23icpc
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Kim
+      given: Kisub
+    - family: Xu
+      given: Bowen
+    - family: Han
+      given: DongGyun
+    - family: He
+      given: Junda
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Program Comprehension (ICPC)
+  title: "Generation-base Code Review Automation: How Far are We?"
+  year: 2023
+  type: conference
 - id: Zhang22Tosem
   author:
     - family: Zhang
