@@ -29,10 +29,7 @@ function OfficeHours() {
       <p>
         <b>14:00&#8211;16:00 Every Tuesday (Academic Year 2022/23)</b>
       </p>
-      <ul>
-        <li>Upon request via email</li>
-        <li>First come, first served</li>
-      </ul>
+      <p>Please come to my office, McCrea 0-14</p>
     </div>
   );
 }
