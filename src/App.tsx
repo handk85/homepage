@@ -16,6 +16,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 import "academicons/css/academicons.css";
@@ -41,22 +42,22 @@ function Contact() {
         <FontAwesomeIcon icon={faInbox} /> Contact
       </h3>
       <h4>Mail: DongGyun.Han@rhul.ac.uk</h4>
-      <Button href="https://blog.donggyun.com" variant="outline-success">
+      <Button href="https://blog.donggyun.com">
         <FontAwesomeIcon icon={faPenFancy} /> Blog
       </Button>{" "}
-      <Button href="https://github.com/handk85" variant="outline-secondary">
+      <Button href="https://github.com/handk85">
         <FontAwesomeIcon icon={faGithub} /> Github
       </Button>{" "}
-      <Button href="https://linkedin.com/in/handk" variant="outline-primary">
+      <Button href="https://linkedin.com/in/handk">
         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
       </Button>{" "}
-      <Button href="https://twitter.com/dr_d_han" variant="outline-info">
+      <Button href="https://twitter.com/dr_d_han">
         <FontAwesomeIcon icon={faTwitter} /> Twitter
       </Button>{" "}
-      <Button
-        href="https://donggyun.com/pdfs/CV-DongGyun.pdf"
-        variant="outline-success"
-      >
+      <Button href="https://mastodon.social/@dr_d_han" rel="me">
+        <FontAwesomeIcon icon={faMastodon} /> Mastodon
+      </Button>{" "}
+      <Button href="https://donggyun.com/pdfs/CV-DongGyun.pdf">
         <FontAwesomeIcon icon={faFile} /> CV
       </Button>{" "}
       <br />
