@@ -1,4 +1,18 @@
 ---
+- id: Ismail23
+  author:
+    - family: Ismail
+      given: Maliha
+    - family: Lin
+      given: Yan
+    - family: Han
+      given: DongGyun
+    - family: Gao
+      given: Debin
+  booktitle: Australasian Conference on Information Security and Privacy (ACISP)
+  title: "BinAlign: Alignment Padding Based Compiler Provenance Recovery"
+  year: 2023
+  type: conference
 - id: Zhou23icpc
   author:
     - family: Zhou

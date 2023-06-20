@@ -1,5 +1,8 @@
 ---
 service:
+  - title: Program Committee (Early Research Achievements)
+    venue: Asia-Pacific Software Engineering Conference (APSEC)
+    date: "2023"
   - title: Reviewer
     venue: "Empirical Software Engineering (EMSE)"
     date: Apr 2023
