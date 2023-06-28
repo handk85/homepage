@@ -1,4 +1,23 @@
 ---
+- id: Zhou23icsme
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Xu
+      given: Bowen
+    - family: Han
+      given: DongGyun
+    - family: Yang
+      given: Zhou
+    - family: He
+      given: Junda
+    - family: Lo
+      given: David
+  booktitle: IEEE International Conference on Software Maintenance and Evolution (ICSME)
+  year: 2023
+  serires: ICSME
+  title: Self-Supervised Code Change Representation Learning
+  type: conference
 - id: Ismail23
   author:
     - family: Ismail
