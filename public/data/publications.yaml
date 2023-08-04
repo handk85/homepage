@@ -1,4 +1,22 @@
 ---
+- id: Zhou23ASE
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Kim
+      given: Kisub
+    - family: Xu
+      given: Bowen
+    - family: Liu
+      given: Jiakun
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+  title: "The Devil is in the Tails: An Exploratory Study on Long-tailed  Distributions in Software Engineering Datasets"
+  year: 2023
+  type: conference
 - id: Zhou23icsme
   author:
     - family: Zhou
@@ -96,7 +114,7 @@
       given: DongGyun
     - family: Lo
       given: David
-  booktitle: 37th IEEE/ACM International Conference on Automated Software Engineering (ASE)
+  booktitle: IEEE/ACM International Conference on Automated Software Engineering (ASE)
   title: "Answer Summarization for Technical Queries: Benchmark and New Approach"
   year: 2022
   type: conference
