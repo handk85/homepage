@@ -11,6 +11,7 @@ import {
   faFile,
   faPenFancy,
   faClock,
+  faCalendarPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -28,9 +29,23 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
       <p>
-        <b>14:00&#8211;16:00 Every Tuesday (Academic Year 2022/23)</b>
+        <b>14:00&#8211;16:00 Every Tuesday (Academic Year 2023/24)</b>
       </p>
-      <p>Please come to my office, McCrea 0-14</p>
+      <ul>
+        <li>Use the below button to book a slot</li>
+        <li>
+          You can choose specific type of meetings (e.g., modules, personal
+          tutor, and others)
+        </li>
+        <li>Please add a note of the meeting agenda</li>
+        <li>
+          The meeting can be either in-person/via MS Teams (please let me know
+          your preference)
+        </li>
+      </ul>
+      <Button href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink">
+        <FontAwesomeIcon icon={faCalendarPlus} /> Book a slot
+      </Button>
     </div>
   );
 }
