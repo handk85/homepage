@@ -4,6 +4,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
 import { ServiceItem } from "./Types";
+import App from "./App";
 
 function Service() {
   const [service, setService] = useState<ServiceItem[]>();
@@ -24,7 +25,7 @@ function Service() {
   return !service ? (
     <Spinner animation="border" />
   ) : (
-    <>
+    <App>
       <h3>
         <FontAwesomeIcon icon={faLink} /> Service
       </h3>
@@ -41,7 +42,7 @@ function Service() {
           {subreview.join(", ")}
         </p>
       )}
-    </>
+    </App>
   );
 }
 

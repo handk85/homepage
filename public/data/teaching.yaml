@@ -1,4 +1,10 @@
 ---
+- course: CS2800 Software Engineering
+  school: Royal Holloway, University of London
+  date: 2023/24
+- course: CS1860 Mathematical Structures (Tutorial)
+  school: Royal Holloway, University of London
+  date: 2023/24
 - course: CS1821/CS1822/DC1821 Programming Laboratory
   school: Royal Holloway, University of London
   date: 2022/23

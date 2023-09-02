@@ -3,6 +3,7 @@ import Spinner from "react-bootstrap/Spinner";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import App from "./App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { generateBibtex, getVenue, getColor, getAuthors } from "./Paper";
@@ -151,7 +152,7 @@ function List() {
 
 function Publications() {
   return (
-    <>
+    <App>
       <h3>
         <FontAwesomeIcon icon={faBookOpen} /> Publications
       </h3>
@@ -180,7 +181,7 @@ function Publications() {
         <br />
       </>
       <List />
-    </>
+    </App>
   );
 }
 

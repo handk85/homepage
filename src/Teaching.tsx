@@ -4,6 +4,7 @@ import { faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
 import { Teaching } from "./Types";
+import App from "./App";
 
 function TeachingExperience() {
   const [teaching, setTeaching] = useState<Teaching[]>();
@@ -19,7 +20,7 @@ function TeachingExperience() {
   return !teaching ? (
     <Spinner animation="border" />
   ) : (
-    <>
+    <App>
       <h3>
         <FontAwesomeIcon icon={faChalkboardTeacher} /> Teaching
       </h3>
@@ -30,7 +31,7 @@ function TeachingExperience() {
           );
         })}
       </ul>
-    </>
+    </App>
   );
 }
 

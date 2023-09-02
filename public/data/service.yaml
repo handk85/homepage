@@ -1,7 +1,7 @@
 ---
 service:
   - title: Program Committee
-    venue: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)
+    venue: ACM International Conference on the Foundations of Software Engineering (FSE)
     date: "2024"
   - title: Program Committee
     venue: International Conference on Program Comprehension (ICPC)
