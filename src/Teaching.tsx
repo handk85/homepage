@@ -17,20 +17,26 @@ function TeachingExperience() {
     });
   }, []);
 
-  return !teaching ? (
-    <Spinner animation="border" />
-  ) : (
+  return (
     <App>
-      <h3>
-        <FontAwesomeIcon icon={faChalkboardTeacher} /> Teaching
-      </h3>
-      <ul>
-        {teaching.map((item, i) => {
-          return (
-            <li key={i}>{`${item.course}, ${item.school}, ${item.date}`}</li>
-          );
-        })}
-      </ul>
+      {!teaching ? (
+        <Spinner animation="border" />
+      ) : (
+        <>
+          <h3>
+            <FontAwesomeIcon icon={faChalkboardTeacher} /> Teaching
+          </h3>
+          <ul>
+            {teaching.map((item, i) => {
+              return (
+                <li
+                  key={i}
+                >{`${item.course}, ${item.school}, ${item.date}`}</li>
+              );
+            })}
+          </ul>
+        </>
+      )}
     </App>
   );
 }

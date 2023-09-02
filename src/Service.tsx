@@ -22,25 +22,29 @@ function Service() {
     });
   }, []);
 
-  return !service ? (
-    <Spinner animation="border" />
-  ) : (
+  return (
     <App>
-      <h3>
-        <FontAwesomeIcon icon={faLink} /> Service
-      </h3>
-      <ul>
-        {service.map((item, i) => {
-          return (
-            <li key={i}>{`${item.title}, ${item.venue}, ${item.date}`}</li>
-          );
-        })}
-      </ul>
-      {subreview && (
-        <p style={{ paddingLeft: "2rem" }}>
-          In addition, I was a sub-reviewer for these conferences:&nbsp;
-          {subreview.join(", ")}
-        </p>
+      {!service ? (
+        <Spinner animation="border" />
+      ) : (
+        <>
+          <h3>
+            <FontAwesomeIcon icon={faLink} /> Service
+          </h3>
+          <ul>
+            {service.map((item, i) => {
+              return (
+                <li key={i}>{`${item.title}, ${item.venue}, ${item.date}`}</li>
+              );
+            })}
+          </ul>
+          {subreview && (
+            <p style={{ paddingLeft: "2rem" }}>
+              In addition, I was a sub-reviewer for these conferences:&nbsp;
+              {subreview.join(", ")}
+            </p>
+          )}
+        </>
       )}
     </App>
   );
