@@ -26,7 +26,7 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
       <p>
-        <b>14:00&#8211;16:00 Every Tuesday (Academic Year 2023/24)</b>
+        <b>14:00&#8211;16:00 Every Wednesday (Academic Year 2023/24)</b>
       </p>
       <ul>
         <li>Use the below button to book a slot</li>
