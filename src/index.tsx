@@ -6,6 +6,7 @@ import Home from "./Home";
 import Publications from "./Publications";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
+import Timeline from "./Timeline";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route path="/publications" element={<Publications />} />
         <Route path="/teaching" element={<TeachingExperience />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/timeline" element={<Timeline />} />
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -15,15 +15,14 @@ function App(props: any) {
               <Nav.Link as={Link} to="/publications">
                 Publications
               </Nav.Link>
-            </Nav>
-            <Nav>
               <Nav.Link as={Link} to="/teaching">
                 Teaching
               </Nav.Link>
-            </Nav>
-            <Nav>
               <Nav.Link as={Link} to="/service">
                 Service
+              </Nav.Link>
+              <Nav.Link as={Link} to="/timeline">
+                Timeline
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

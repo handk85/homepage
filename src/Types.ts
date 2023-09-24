@@ -95,6 +95,15 @@ interface EducationItem {
   supervisor?: Supervisor[];
 }
 
+interface TimelineItem {
+  date: string;
+  title: string;
+  affiliation: string;
+  type: "education" | "work";
+  city?: string;
+  description?: string;
+}
+
 export type {
   PaperType,
   Paper,
@@ -109,4 +118,5 @@ export type {
   Work,
   Teaching,
   EducationItem,
+  TimelineItem,
 };
