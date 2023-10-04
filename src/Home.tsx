@@ -36,8 +36,10 @@ function OfficeHours() {
         </li>
         <li>Please add a note of the meeting agenda</li>
         <li>
-          The meeting can be either in-person/via MS Teams (please let me know
-          your preference)
+          By default, meetings will be in-person at my office (McCrea 0-14)
+        </li>
+        <li>
+          If you are not able to have an in-person meeting, please let me know
         </li>
       </ul>
       <Button href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink">
