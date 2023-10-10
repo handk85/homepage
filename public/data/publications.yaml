@@ -1,4 +1,24 @@
 ---
+- id: Yang24ICSE
+  author:
+    - family: Yang
+      given: Zhou
+    - family: Zhao
+      given: Zhipeng
+    - family: Wang
+      given: Chenyu
+    - family: Shi
+      given: Jieke
+    - family: Kim
+      given: Dongsun
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Software Engineering (ICSE)
+  title: "Unveiling Memorization in Code Models"
+  year: 2024
+  type: conference
 - id: Zhou23ASE
   author:
     - family: Zhou
