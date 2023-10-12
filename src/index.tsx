@@ -7,6 +7,7 @@ import Publications from "./Publications";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import Timeline from "./Timeline";
+import Music from "./Music";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route path="/publications" element={<Publications />} />
         <Route path="/teaching" element={<TeachingExperience />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/music" element={<Music />} />
         <Route path="/timeline" element={<Timeline />} />
       </Routes>
     </Router>
