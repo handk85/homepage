@@ -9,6 +9,7 @@ import Service from "./Service";
 import Timeline from "./Timeline";
 import Music from "./Music";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "academicons/css/academicons.css";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -17,7 +17,6 @@ import {
   faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
-import "academicons/css/academicons.css";
 
 function OfficeHours() {
   return (
