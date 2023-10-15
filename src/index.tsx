@@ -7,7 +7,7 @@ import Publications from "./Publications";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
 import Timeline from "./Timeline";
-import Music from "./Music";
+import Trivia from "./Trivia";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "academicons/css/academicons.css";
 
@@ -19,7 +19,7 @@ ReactDOM.render(
         <Route path="/publications" element={<Publications />} />
         <Route path="/teaching" element={<TeachingExperience />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/music" element={<Music />} />
+        <Route path="/trivia" element={<Trivia />} />
         <Route path="/timeline" element={<Timeline />} />
       </Routes>
     </Router>

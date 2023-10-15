@@ -24,8 +24,8 @@ function App(props: any) {
               <Nav.Link as={Link} to="/timeline">
                 Timeline
               </Nav.Link>
-              <Nav.Link as={Link} to="/music">
-                Music
+              <Nav.Link as={Link} to="/trivia">
+                Trivia
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
