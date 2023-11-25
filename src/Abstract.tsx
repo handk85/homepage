@@ -36,8 +36,9 @@ function Abstract() {
             Royal Holloway, University of London
           </a>
           . He is mainly working on software engineering research. His main
-          research interests are empirical study, AI for software engineering
-          (AI4SE), and code review. He was a research scientist (postdoc) at{" "}
+          research interests are Empirical Study, AI for Software Engineering
+          (AI4SE), Software Engineering for AI (SE4AI), and Code Review. He was
+          a research scientist (postdoc) at{" "}
           <a href="https://soarsmu.github.io/">
             SOftware Analytics Research (SOAR) group
           </a>{" "}

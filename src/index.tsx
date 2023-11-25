@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Home from "./Home";
+import Experience from "./Experience";
 import Publications from "./Publications";
 import TeachingExperience from "./Teaching";
 import Service from "./Service";
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/teaching" element={<TeachingExperience />} />
         <Route path="/service" element={<Service />} />
