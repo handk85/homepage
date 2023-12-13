@@ -1,6 +1,9 @@
 ---
 service:
   - title: Reviewer
+    venue: "Journal of Systems & Software (JSS)"
+    date: Dec 2023
+  - title: Reviewer
     venue: "Empirical Software Engineering (EMSE)"
     date: Sep 2023
   - title: Program Committee
