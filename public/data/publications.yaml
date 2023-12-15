@@ -1,4 +1,20 @@
 ---
+- id: Zhous24ICSE
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Kim
+      given: Kisub
+    - family: Xu
+      given: Bowen
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  booktitle: IEEE/ACM International Conference on Software Engineering (ICSE)
+  title: "Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources"
+  year: 2024
+  type: conference
 - id: Yang24ICSE
   author:
     - family: Yang
