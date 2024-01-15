@@ -1,5 +1,8 @@
 ---
 service:
+  - title: Program Committee
+    venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+    date: "2024"
   - title: Reviewer
     venue: "Journal of Systems & Software (JSS)"
     date: Dec 2023
