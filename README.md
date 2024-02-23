@@ -34,6 +34,10 @@ Your app is ready to be deployed!
 
 To check an example of customization, please check [the branch](https://github.com/handk85/react-homepage/tree/donggyun) in this repo
 
+### Delete Google Analytics
+
+Please delete the global site tag (gtag.js) for Google Analytics in [public/index.html](https://github.com/handk85/homepage/blob/be38cadf2076620211078e34b4601793dd9d9b68/public/index.html#L8C1-L22C37).
+
 ### Data
 
 All your publication, service, education, and work experience should be stored in `public/data/` in YAML format.
@@ -54,4 +58,3 @@ Pleaese update meta tags with your information
 ### Update `public/manifest.json`
 
 - Update `short_name`, `name`, and `icons`
-
