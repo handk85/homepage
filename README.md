@@ -36,6 +36,14 @@ Your app is ready to be deployed!
 
 Please delete the global site tag (gtag.js) for Google Analytics in [public/index.html](https://github.com/handk85/homepage/blob/be38cadf2076620211078e34b4601793dd9d9b68/public/index.html#L8C1-L22C37).
 
+### Update Meta Tags
+
+Please update/delete meta tags in [public/index.html](https://github.com/handk85/homepage/blob/c47b02fa7ac761fe8357e057489a0f0cb9c76f9f/public/index.html#L24C1-L43C29).
+
+### Update `public/manifest.json`
+
+- Update `short_name`, `name`, and `icons`
+
 ### Data
 
 All your publication, service, education, and work experience should be stored in `public/data/` in YAML format.
@@ -48,11 +56,3 @@ Please update `src/Abstract.tsx` with your bio.
 ### Update Contact and CV info
 
 Please update `Contact` and `CV` functions in `src/App.tsx`.
-
-### Update `public/index.html`
-
-Pleaese update meta tags with your information
-
-### Update `public/manifest.json`
-
-- Update `short_name`, `name`, and `icons`
