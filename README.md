@@ -32,8 +32,6 @@ Your app is ready to be deployed!
 
 ## Customize for your own
 
-To check an example of customization, please check [the branch](https://github.com/handk85/react-homepage/tree/donggyun) in this repo
-
 ### Delete Google Analytics
 
 Please delete the global site tag (gtag.js) for Google Analytics in [public/index.html](https://github.com/handk85/homepage/blob/be38cadf2076620211078e34b4601793dd9d9b68/public/index.html#L8C1-L22C37).
