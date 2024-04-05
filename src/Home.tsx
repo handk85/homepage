@@ -5,6 +5,7 @@ import {
   faInbox,
   faClock,
   faCalendarPlus,
+  faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -12,6 +13,7 @@ import {
   faLinkedin,
   faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
+import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 
 function OfficeHours() {
@@ -20,16 +22,28 @@ function OfficeHours() {
       <h3>
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </h3>
+      <Alert variant="info">
+        <FontAwesomeIcon icon={faExclamationCircle} /> I have flexible timeslots
+        as the term is over. Please email me to schedule a meeting
+      </Alert>
       <p>
-        <b>14:00&#8211;16:00 Every Wednesday (Academic Year 2023/24)</b>
+        <b>
+          <s>14:00&#8211;16:00 Every Wednesday (Academic Year 2023/24)</s>
+        </b>
       </p>
       <ul>
-        <li>Use the below button to book a slot</li>
         <li>
-          You can choose specific type of meetings (e.g., modules, personal
-          tutor, and others)
+          <s>Use the below button to book a slot</s>
         </li>
-        <li>Please add a note of the meeting agenda</li>
+        <li>
+          <s>
+            You can choose specific type of meetings (e.g., modules, personal
+            tutor, and others)
+          </s>
+        </li>
+        <li>
+          <s>Please add a note of the meeting agenda</s>
+        </li>
         <li>
           By default, meetings will be in-person at my office (McCrea 0-14)
         </li>
@@ -37,7 +51,10 @@ function OfficeHours() {
           If you are not able to have an in-person meeting, please let me know
         </li>
       </ul>
-      <Button href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink">
+      <Button
+        href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink"
+        disabled
+      >
         <FontAwesomeIcon icon={faCalendarPlus} /> Book a slot
       </Button>
     </div>
