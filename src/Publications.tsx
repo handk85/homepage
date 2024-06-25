@@ -1,17 +1,27 @@
 import { useState, useEffect, ReactElement } from "react";
-import Spinner from "react-bootstrap/Spinner";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import {
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+  Link,
+  CircularProgress,
+  Divider,
+} from "@mui/material";
 import App from "./App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faClipboard } from "@fortawesome/free-solid-svg-icons";
-import { generateBibtex, getVenue, getColor, getAuthors } from "./Paper";
+import { generateBibtex, getVenue, getAuthors } from "./Paper";
 import { Paper } from "./Types";
 import { load } from "js-yaml";
 
 function generateLink(url: string, name: string): ReactElement {
-  return <a href={url}>[{name}]</a>;
+  return <Link href={url}>[{name}]</Link>;
 }
 
 function objToString(item: Paper): string {
@@ -31,21 +41,18 @@ function BibtexModal(props: any) {
   const paper: Paper = props.paper;
   const bibtex = generateBibtex(paper);
   return (
-    <Modal
+    <Dialog
       {...props}
-      size="lg"
+      maxWidth="xl"
       aria-labelledby="contained-modal-title-vcenter"
-      centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Bibtex</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
+      <DialogTitle id="alert-dialog-title">Bibtex</DialogTitle>
+      <DialogContent>
         <pre>{bibtex}</pre>
-      </Modal.Body>
-      <Modal.Footer>
+      </DialogContent>
+      <DialogActions>
         <Button
-          active={copied}
+          disabled={copied}
           onClick={() => {
             setCopied(true);
             setTimeout(() => {
@@ -53,13 +60,13 @@ function BibtexModal(props: any) {
             }, 3000);
             navigator.clipboard.writeText(bibtex);
           }}
+          startIcon={<FontAwesomeIcon icon={faClipboard} />}
         >
-          <FontAwesomeIcon icon={faClipboard} />{" "}
           {copied ? "Copied" : "Copy to clipboard"}
         </Button>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
+        <Button onClick={props.onClose}>Close</Button>
+      </DialogActions>
+    </Dialog>
   );
 }
 
@@ -80,15 +87,14 @@ function Papers(props: { papers: Paper[] }) {
       {years.map((y) => {
         return (
           <>
-            <h4 style={{ paddingTop: "10px" }}>{y}</h4>
-            {perYear[y].map((item) => {
-              return (
-                <>
-                  <Card className="border-0" key={item.id}>
-                    <Card.Body
-                      className={`border-${getColor(item)}`}
-                      style={{ borderLeft: "10px solid", padding: "5px" }}
-                    >
+            <Typography variant="h6" style={{ paddingTop: "10px" }}>
+              {y}
+            </Typography>
+            <List>
+              {perYear[y].map((item) => {
+                return (
+                  <ListItem>
+                    <ListItemText>
                       {objToString(item)}{" "}
                       {item.site && generateLink(item.site, "SITE")}
                       {item.pdf && generateLink(`${item.pdf}`, "PDF")}
@@ -106,15 +112,15 @@ function Papers(props: { papers: Paper[] }) {
                           [Bibtex]
                         </a>
                       )}
-                    </Card.Body>
-                  </Card>
-                </>
-              );
-            })}
+                    </ListItemText>
+                  </ListItem>
+                );
+              })}
+            </List>
             {bibtexPaper && (
               <BibtexModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
+                open={modalShow}
+                onClose={() => setModalShow(false)}
                 paper={bibtexPaper}
               />
             )}
@@ -135,7 +141,7 @@ async function loadYaml(path: string) {
   return data;
 }
 
-function List() {
+function PaperList() {
   const [papers, setPapers] = useState<Paper[]>();
 
   useEffect(() => {
@@ -145,42 +151,42 @@ function List() {
     })();
   }, []);
 
-  return (
-    <>{!papers ? <Spinner animation="border" /> : <Papers papers={papers} />}</>
-  );
+  return <>{!papers ? <CircularProgress /> : <Papers papers={papers} />}</>;
 }
 
 function Publications() {
   return (
     <App>
-      <h3>
+      <Typography variant="h5">
         <FontAwesomeIcon icon={faBookOpen} /> Publications
-      </h3>
+      </Typography>
       <>
         <br />
-        <h4>Bibliographic Profiles</h4>
+        <Typography variant="h6">Bibliographic Profiles</Typography>
         <Button
           href="https://orcid.org/0000-0002-8599-2197"
-          variant="outline-success"
+          variant="outlined"
+          startIcon={<i className="ai ai-orcid" />}
         >
-          <i className="ai ai-orcid" /> ORCID
+          ORCID
         </Button>{" "}
         <Button
           href="https://scholar.google.com/citations?user=gfAdVBwAAAAJ"
-          variant="outline-success"
+          variant="outlined"
+          startIcon={<i className="ai ai-google-scholar" />}
         >
-          <i className="ai ai-google-scholar" /> Google Scholar
+          Scholar
         </Button>{" "}
         <Button
           href="https://dblp.org/pid/35/10082.html"
-          variant="outline-success"
+          variant="outlined"
+          startIcon={<i className="ai ai-dblp" />}
         >
-          <i className="ai ai-dblp" /> DBLP
+          DBLP
         </Button>
-        <br />
-        <br />
+        <Divider sx={{ my: 4 }} />
       </>
-      <List />
+      <PaperList />
     </App>
   );
 }

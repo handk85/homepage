@@ -35,19 +35,6 @@ function getVenue(item: Paper) {
   }
 }
 
-function getColor(item: Paper) {
-  switch (item.type) {
-    case "journal":
-      return "danger";
-    case "conference":
-      return "primary";
-    case "thesis":
-      return "warning";
-    case "book":
-      return "warning";
-  }
-}
-
 function getAuthors(item: Paper) {
   const authors: string[] = item.author.map((author) => {
     return `${author.given} ${author.family}`;
@@ -77,4 +64,4 @@ ${paperToBibtex(paper)
   }
 }
 
-export { getVenue, getColor, generateBibtex, getAuthors };
+export { getVenue, generateBibtex, getAuthors };

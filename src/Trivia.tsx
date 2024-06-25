@@ -1,52 +1,64 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic, faGuitar, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { Row, Col, Card } from "react-bootstrap";
+import {
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  Divider,
+  List,
+  ListItem,
+} from "@mui/material";
 import App from "./App";
 
 function Youtube(props: { title: string; desc: string; url: string }) {
   return (
-    <Col>
-      <Card style={{ width: "562px" }}>
-        <iframe
-          width="560"
-          height="315"
-          src={props.url}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-        <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.desc}</Card.Text>
-        </Card.Body>
+    <Grid item md={6} xs={12}>
+      <Card style={{ width: 510 }}>
+        <CardMedia>
+          <iframe
+            width="510"
+            height="286"
+            src={props.url}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </CardMedia>
+        <CardContent>
+          <Typography>{props.title}</Typography>
+          <Typography>{props.desc}</Typography>
+        </CardContent>
       </Card>
-    </Col>
+    </Grid>
   );
 }
 
 function Music() {
   return (
     <>
-      <h3>
+      <Typography variant="h5">
         <FontAwesomeIcon icon={faMusic} /> Music
-      </h3>
-      <Row>
-        <Col md="auto">
-          <Card style={{ width: "350px" }}>
-            <Card.Img src="./dk.jpg" alt="In a gig" />
+      </Typography>
+      <br />
+      <Grid container>
+        <Grid md={4} xs={12}>
+          <Card sx={{ maxWidth: "360px" }}>
+            <CardMedia sx={{ maxWidth: "360px", maxHeight: "360px" }}>
+              <img src="./dk.jpg" alt="In a gig" style={{ width: "360px" }} />
+            </CardMedia>
           </Card>
-          <Card.Body>
-            <Card.Text>
-              <p className="text-secondary">
-                Hope and Anchor, London, UK, 25 August 2016
-              </p>
-            </Card.Text>
-          </Card.Body>
-        </Col>
-        <Col>
-          <p>
+          <CardContent>
+            <p className="text-secondary">
+              Hope and Anchor, London, UK, 25 August 2016
+            </p>
+          </CardContent>
+        </Grid>
+        <Grid md={8} xs={12}>
+          <Typography>
             In my free time, I love to play musical instruments. I mostly play
             electric guitar, but I also can play acoustic guitar, bass, and
             piano at a basic level. Playing music helps me relieve stress.
@@ -55,17 +67,17 @@ function Music() {
             song (I am lazy and not good at memorising something…), I love to
             improvise over diverse backing tracks available on YouTube. I also
             have basic songwriting skills, so I write my own songs sometimes.
-          </p>
-        </Col>
-      </Row>
+          </Typography>
+        </Grid>
+      </Grid>
 
       <br />
 
-      <h4>
+      <Typography variant="h6">
         <FontAwesomeIcon icon={faYoutube} /> Videos
-      </h4>
+      </Typography>
 
-      <Row xs={1} md={2} className="g-4">
+      <Grid container rowSpacing={2}>
         <Youtube
           title="Wham! - Last Christmas (cover)"
           desc="Berlin, Germany, 26 July 2020"
@@ -96,45 +108,61 @@ function Music() {
           desc="The Water Rats, London, UK, 10 June 2016"
           url="https://www.youtube.com/embed/XQ2bM1s6cYM?si=fLWlawPShDtRy9S4"
         />
-      </Row>
+      </Grid>
 
       <br />
-      <h4>
-        <FontAwesomeIcon icon={faGuitar} /> Guitars that I owned
-      </h4>
-      <ul>
-        <li>
-          Epiphone Les Paul Standard 60s (Bourbon Burst), 2022&#8211;Present
-          &#8212; Using in UK
-        </li>
-        <li>
-          Squire Classic Vibe 70s Stratocaster HSS (Walnut), 2021&#8211;2022
-          &#8212; Used in Singapore
-        </li>
-        <li>
-          PRS SE Custom 24 (Tampas Green), 2019&#8211;2021 &#8212; Used in
-          Berlin
-        </li>
-        <li>
-          Epiphone Les Paul Custom Pro (Ebony), 2017&#8211;2018 &#8212; Used in
-          Seattle and UK
-        </li>
-        <li>
-          American Standard Stratocaster (Sienna Sunburst), 2016&#8211;Present
-          &#8212; Used in New York, UK, Seattle, Korea
-        </li>
-        <li>
-          Epiphone Dot ES-335 (Cherry), 2015&#8211;2016 &#8212; Used in UK
-        </li>
-        <li>
-          Epiphone Les Paul Standard (Cherry Sunburst), 2012&#8211;2015 &#8212;
-          Used in Hong Kong and Korea
-        </li>
-        <li>
-          Squire Stratorcaster (Sunburst), 2004&#8211;2012 &#8212; Used in Korea
-          and Hong Kong
-        </li>
-      </ul>
+      <Typography variant="h6">
+        <FontAwesomeIcon icon={faGuitar} /> Guitars that I own or have owned
+      </Typography>
+      <List>
+        <ListItem>
+          <Typography>
+            Epiphone Les Paul Standard 60s (Bourbon Burst), 2022&#8211;Present
+            &#8212; Using in UK
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            Squire Classic Vibe 70s Stratocaster HSS (Walnut), 2021&#8211;2022
+            &#8212; Used in Singapore
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            PRS SE Custom 24 (Tampas Green), 2019&#8211;2021 &#8212; Used in
+            Berlin
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            Epiphone Les Paul Custom Pro (Ebony), 2017&#8211;2018 &#8212; Used
+            in Seattle and UK
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            American Standard Stratocaster (Sienna Sunburst), 2016&#8211;Present
+            &#8212; Used in New York, UK, Seattle, Korea
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            Epiphone Dot ES-335 (Cherry), 2015&#8211;2016 &#8212; Used in UK
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            Epiphone Les Paul Standard (Cherry Sunburst), 2012&#8211;2015
+            &#8212; Used in Hong Kong and Korea
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            Squire Stratorcaster (Sunburst), 2004&#8211;2012 &#8212; Used in
+            Korea and Hong Kong
+          </Typography>
+        </ListItem>
+      </List>
     </>
   );
 }
@@ -142,17 +170,16 @@ function Music() {
 function Island() {
   return (
     <>
-      <h3>
+      <Typography variant="h5">
         <FontAwesomeIcon icon={faGlobe} /> Island
-      </h3>
+      </Typography>
       <br />
-      <blockquote className="blockquote">
-        <p>
-          I was born on an island and have spent most of my lifetime on multiple
-          islands.
-        </p>
-      </blockquote>
-      <p>
+      <Typography variant="body1">
+        I was born on an island and have spent most of my lifetime on multiple
+        islands.
+      </Typography>
+      <br />
+      <Typography>
         Jeju Island is a beautiful place where I was born and grew up until my
         early twenties. Then, I was in Hong Kong and the UK for my master and
         PhD degrees, respectively. During my postdoc, I was in Singapore. Of
@@ -160,7 +187,7 @@ function Island() {
         spent three months in New York for an internship, however, I was in
         Manhattan (which is an island). When I worked in Berlin after finishing
         my PhD, my office was on the Museum island.
-      </p>
+      </Typography>
     </>
   );
 }
@@ -169,7 +196,7 @@ function Trivia() {
   return (
     <App>
       <Island />
-      <hr />
+      <Divider sx={{ my: 4 }} />
       <Music />
     </App>
   );

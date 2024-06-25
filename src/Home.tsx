@@ -5,85 +5,121 @@ import {
   faInbox,
   faClock,
   faCalendarPlus,
-  faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
+import {
+  Button,
+  Alert,
+  Typography,
+  Divider,
+  List,
+  ListItem,
+} from "@mui/material";
 
 function OfficeHours() {
   return (
-    <div>
-      <h3>
+    <>
+      <Typography variant="h6">
         <FontAwesomeIcon icon={faClock} /> Office Hours
-      </h3>
-      <Alert variant="info">
-        <FontAwesomeIcon icon={faExclamationCircle} /> I have flexible timeslots
-        as the term is over. Please email me to schedule a meeting
+      </Typography>
+      <br />
+      <Alert
+        severity="info"
+        sx={{
+          fontSize: 20,
+          "& .MuiAlert-icon": {
+            fontSize: "30px",
+          },
+        }}
+      >
+        I have flexible timeslots as the term is over. Please email me to
+        schedule a meeting
       </Alert>
-      <p>
+      <br />
+      <Typography>
         <b>
           <s>14:00&#8211;16:00 Every Wednesday (Academic Year 2023/24)</s>
         </b>
-      </p>
-      <ul>
-        <li>
-          <s>Use the below button to book a slot</s>
-        </li>
-        <li>
-          <s>
-            You can choose specific type of meetings (e.g., modules, personal
-            tutor, and others)
-          </s>
-        </li>
-        <li>
-          <s>Please add a note of the meeting agenda</s>
-        </li>
-        <li>
-          By default, meetings will be in-person at my office (McCrea 0-14)
-        </li>
-        <li>
-          If you are not able to have an in-person meeting, please let me know
-        </li>
-      </ul>
+      </Typography>
+      <List>
+        <ListItem>
+          <Typography>
+            <s>Use the below button to book a slot</s>
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            <s>
+              You can choose specific type of meetings (e.g., modules, personal
+              tutor, and others)
+            </s>
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            <s>Please add a note of the meeting agenda</s>
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            By default, meetings will be in-person at my office (McCrea 0-14)
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography>
+            If you are not able to have an in-person meeting, please let me know
+          </Typography>
+        </ListItem>
+      </List>
       <Button
         href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink"
+        startIcon={<FontAwesomeIcon icon={faCalendarPlus} />}
         disabled
       >
-        <FontAwesomeIcon icon={faCalendarPlus} /> Book a slot
+        Book a slot
       </Button>
-    </div>
+    </>
   );
 }
 
 function Contact() {
   return (
     <>
-      <h3>
+      <Typography variant="h6">
         <FontAwesomeIcon icon={faInbox} /> Contact
-      </h3>
-      <h4>Mail: DongGyun.Han@rhul.ac.uk</h4>
-      <Button href="https://linkedin.com/in/handk">
-        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+      </Typography>
+      <Typography variant="subtitle1" mt={2} mb={2}>
+        Mail: DongGyun.Han@rhul.ac.uk
+      </Typography>
+      <Button
+        variant="outlined"
+        href="https://linkedin.com/in/handk"
+        startIcon={<FontAwesomeIcon icon={faLinkedin} />}
+      >
+        LinkedIn
       </Button>{" "}
-      <Button href="https://github.com/handk85">
-        <FontAwesomeIcon icon={faGithub} /> Github
+      <Button
+        variant="outlined"
+        href="https://github.com/handk85"
+        startIcon={<FontAwesomeIcon icon={faGithub} />}
+      >
+        Github
       </Button>{" "}
-      <Button href="https://twitter.com/dr_d_han">
-        <FontAwesomeIcon icon={faTwitter} /> Twitter
-      </Button>{" "}
-      <Button href="https://mastodon.social/@dr_d_han" rel="me">
-        <FontAwesomeIcon icon={faMastodon} /> Mastodon
+      <Button
+        variant="outlined"
+        href="https://twitter.com/dr_d_han"
+        startIcon={<FontAwesomeIcon icon={faTwitter} />}
+      >
+        Twitter
       </Button>{" "}
       <br />
       <br />
-      <h4>Address:</h4>
-      <span>
+      <Typography variant="subtitle1">Address:</Typography>
+      <Typography>
         Room 0-14, McCrea Building <br />
         Department of Computer Science <br />
         Royal Holloway, University of London <br />
@@ -92,7 +128,7 @@ function Contact() {
         TW20 0EX
         <br />
         <br />
-      </span>
+      </Typography>
       <iframe
         title="Map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.774438575285!2d-0.5651530670257586!3d51.425569988794315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876772fe423337f%3A0x2337180a1e018f1!2sMcCrea%20Building!5e0!3m2!1sen!2suk!4v1659102801074!5m2!1sen!2suk"
@@ -110,9 +146,9 @@ function Home() {
   return (
     <App>
       <Abstract />
-      <hr />
+      <Divider sx={{ my: 2 }} />
       <OfficeHours />
-      <hr />
+      <Divider sx={{ my: 2 }} />
       <Contact />
     </App>
   );

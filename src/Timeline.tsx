@@ -5,7 +5,7 @@ import {
   faBriefcase,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
-import Spinner from "react-bootstrap/Spinner";
+import { CircularProgress, Typography } from "@mui/material";
 import { load } from "js-yaml";
 import { EducationItem, Work, TimelineItem } from "./Types";
 import App from "./App";
@@ -72,11 +72,11 @@ function Timeline() {
 
   return (
     <App style={{ background: "#aaa" }}>
-      <h3>
+      <Typography variant="h5">
         <FontAwesomeIcon icon={faClock} /> Timeline
-      </h3>
+      </Typography>
       {!items ? (
-        <Spinner animation="border" />
+        <CircularProgress />
       ) : (
         <>
           <VerticalTimeline lineColor="#aaa">
@@ -103,18 +103,17 @@ function Timeline() {
                   }
                   date={item.date}
                 >
-                  <h3 className="vertical-timeline-element-title">
+                  <Typography
+                    variant="body1"
+                    className="vertical-timeline-element-title"
+                  >
                     {item.title}
-                  </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    {item.affiliation}
-                  </h4>
+                  </Typography>
+                  <Typography variant="body2">{item.affiliation}</Typography>
                   {item.city && (
-                    <h4 className="vertical-timeline-element-subtitle">
-                      {item.city}
-                    </h4>
+                    <Typography variant="body2">{item.city}</Typography>
                   )}
-                  <p>{item.description}</p>
+                  <Typography>{item.description}</Typography>
                 </VerticalTimelineElement>
               );
             })}

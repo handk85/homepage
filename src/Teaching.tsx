@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
-import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
 import { Teaching } from "./Types";
 import App from "./App";
+import { Typography, List, ListItem } from "@mui/material";
 
 function TeachingExperience() {
   const [teaching, setTeaching] = useState<Teaching[]>();
@@ -19,24 +19,21 @@ function TeachingExperience() {
 
   return (
     <App>
-      {!teaching ? (
-        <Spinner animation="border" />
-      ) : (
-        <>
-          <h3>
-            <FontAwesomeIcon icon={faChalkboardTeacher} /> Teaching
-          </h3>
-          <ul>
-            {teaching.map((item, i) => {
-              return (
-                <li
-                  key={i}
-                >{`${item.course}, ${item.school}, ${item.date}`}</li>
-              );
-            })}
-          </ul>
-        </>
-      )}
+      <Typography variant="h5">
+        <FontAwesomeIcon icon={faChalkboardTeacher} /> Teaching
+      </Typography>
+      <List>
+        {teaching &&
+          teaching.map((item, i) => {
+            return (
+              <ListItem key={i}>
+                <Typography>
+                  {`${item.course}, ${item.school}, ${item.date}`}
+                </Typography>
+              </ListItem>
+            );
+          })}
+      </List>
     </App>
   );
 }

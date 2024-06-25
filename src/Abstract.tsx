@@ -1,6 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Grid, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,22 +9,35 @@ function playFirstName() {
 
 function Abstract() {
   return (
-    <Container style={{ marginTop: "2rem", marginBottom: "1rem" }}>
-      <Row className="align-items-center">
-        <Col md="auto">
+    <Grid container style={{ marginBottom: "2rem" }}>
+      <Grid
+        md={3}
+        xs={12}
+        style={{ minWidth: 210 }}
+        container
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Grid item>
           <img src="./profile.jpg" width={200} alt="DongGyun Han" />
-        </Col>
-        <Col>
-          <h2>
-            DongGyun
-            <sup style={{ fontSize: "60%" }}>
-              <FontAwesomeIcon icon={faVolumeUp} onClick={playFirstName} />
-            </sup>{" "}
-            Han
-          </h2>
-          <h5>Lecturer</h5>
-          <h5>Department of Computer Science</h5>
-          <h5>Royal Holloway, University of London</h5>
+        </Grid>
+      </Grid>
+      <Grid md={9} xs={12} style={{ paddingTop: "2vh" }}>
+        <Typography variant="h5">
+          DongGyun
+          <sup style={{ fontSize: "60%" }}>
+            <FontAwesomeIcon icon={faVolumeUp} onClick={playFirstName} />
+          </sup>{" "}
+          Han
+        </Typography>
+        <Typography variant="h6">Lecturer (Assistant Professor)</Typography>
+        <Typography variant="h6">Department of Computer Science</Typography>
+        <Typography variant="h6">
+          Royal Holloway, University of London
+        </Typography>
+        <br />
+        <Typography>
           Dr DongGyun Han is a lecturer (assistant professor) at the{" "}
           <a href="https://www.cs.rhul.ac.uk/">
             Department of Computer Science
@@ -49,19 +60,18 @@ function Abstract() {
           . Before joining SMU, he was a software development engineer at{" "}
           <a href="https://aws.amazon.com">Amazon Web Services</a>. He completed
           his PhD at the{" "}
-          <a href="http://ucl.ac.uk">University College London (UCL)</a>. He has
-          worked for{" "}
+          <a href="http://ucl.ac.uk">University Gridlege London (UCL)</a>. He
+          has worked for{" "}
           <a href="https://itc.kaist.ac.kr/">
             KAIST Institute for IT Convergence
           </a>{" "}
           as a researcher after getting his MPhil. at{" "}
           <a href="http://www.ust.hk">
-            Hong Kong University of Science and Technology (HKUST)
+            Hong Kong University of Science and Technology (HKUST).
           </a>
-          .
-        </Col>
-      </Row>
-    </Container>
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }
 

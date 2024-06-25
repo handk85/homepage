@@ -1,55 +1,122 @@
-import { Link } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import React from "react";
+import {
+  Container,
+  Drawer,
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Typography,
+  IconButton,
+  Divider,
+  useMediaQuery,
+} from "@mui/material";
+import { Menu } from "@mui/icons-material";
+import { useTheme, createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App(props: any) {
-  return (
-    <>
-      <Navbar expand="lg" style={{ marginBottom: "1rem" }}>
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            DongGyun Han
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
-              <Nav.Link as={Link} to="/experience">
-                Experience
-              </Nav.Link>
-              <Nav.Link as={Link} to="/publications">
-                Publications
-              </Nav.Link>
-              <Nav.Link as={Link} to="/teaching">
-                Teaching
-              </Nav.Link>
-              <Nav.Link as={Link} to="/service">
-                Service
-              </Nav.Link>
-              <Nav.Link as={Link} to="/timeline">
-                Timeline
-              </Nav.Link>
-              <Nav.Link as={Link} to="/trivia">
-                Trivia
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Container style={{ minHeight: "1000px" }}>{props.children}</Container>
+  const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"), {
+    noSsr: true,
+  });
+  const [open, setOpen] = React.useState(!isMobile);
 
-      <footer style={{ marginTop: "5rem", marginBottom: "3rem" }}>
+  React.useEffect(() => {
+    setOpen(!isMobile);
+  }, [isMobile]);
+
+  const links = [
+    { name: "Home", link: "/" },
+    { name: "Experience", link: "/experience" },
+    { name: "Publications", link: "/publications" },
+    { name: "Teaching", link: "/teaching" },
+    { name: "Service", link: "/service" },
+    { name: "Timeline", link: "/timeline" },
+    { name: "Trivia", link: "/trivia" },
+  ];
+
+  const theme = createTheme({
+    typography: {
+      fontSize: 16,
+    },
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
+      {isMobile && (
+        <IconButton
+          onClick={() => setOpen(!open)}
+          style={{
+            position: "absolute",
+            display: "block",
+            top: 0,
+            left: 0,
+          }}
+        >
+          <Menu />
+        </IconButton>
+      )}
+      <Box sx={{ display: "flex" }}>
+        <Drawer
+          open={open}
+          style={{ width: "200px" }}
+          variant={isMobile ? "temporary" : "persistent"}
+          onClose={() => setOpen(!open)}
+        >
+          <List component="nav">
+            <ListItem>
+              <ListItemButton
+                href="/"
+                target="_self"
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "transparent",
+                  },
+                }}
+              >
+                <ListItemText>
+                  <Typography variant="h6">DongGyun Han</Typography>
+                  {!isMobile && (
+                    <>
+                      <Typography>Lecturer</Typography>
+                      <Typography>@RHUL</Typography>
+                    </>
+                  )}
+                </ListItemText>
+              </ListItemButton>
+            </ListItem>
+            <Divider />
+            {links.map((l) => {
+              return (
+                <ListItem key={l.name}>
+                  <ListItemButton href={l.link} target="_self">
+                    <ListItemText primary={l.name} />
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
+          </List>
+        </Drawer>
         <Container>
-          <hr />
-          <p className="text-center">
-            &copy; 2021 DongGyun Han. The&nbsp;
-            <a href="https://github.com/handk85/homepage">
-              source code of this homepage
-            </a>
-            &nbsp;is available at Github. Please feel free to extend it for your
-            own homepage.
-          </p>
+          <>
+            <div style={{ minHeight: "87vh", paddingTop: "4vh" }}>
+              {props.children}
+            </div>
+            <footer style={{ marginTop: "1rem", marginBottom: "2rem" }}>
+              <Divider sx={{ my: 2 }} />
+              <Typography textAlign="center">
+                &copy; 2024 DongGyun Han. The&nbsp;
+                <a href="https://github.com/handk85/homepage">
+                  source code of this homepage
+                </a>
+                &nbsp;is available at Github. Please feel free to extend it for
+                your own homepage.
+              </Typography>
+            </footer>
+          </>
         </Container>
-      </footer>
-    </>
+      </Box>
+    </ThemeProvider>
   );
 }
 
