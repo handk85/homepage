@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
 import { ServiceItem } from "./Types";
 import App from "./App";
+import { Typography, List, ListItem } from "@mui/material";
 
 function Service() {
   const [service, setService] = useState<ServiceItem[]>();
@@ -24,27 +24,26 @@ function Service() {
 
   return (
     <App>
-      {!service ? (
-        <Spinner animation="border" />
-      ) : (
-        <>
-          <h3>
-            <FontAwesomeIcon icon={faLink} /> Service
-          </h3>
-          <ul>
-            {service.map((item, i) => {
-              return (
-                <li key={i}>{`${item.title}, ${item.venue}, ${item.date}`}</li>
-              );
-            })}
-          </ul>
-          {subreview && (
-            <p style={{ paddingLeft: "2rem" }}>
-              In addition, I was a sub-reviewer for these conferences:&nbsp;
-              {subreview.join(", ")}
-            </p>
-          )}
-        </>
+      <Typography variant="h5">
+        <FontAwesomeIcon icon={faLink} /> Service
+      </Typography>
+      <List>
+        {service &&
+          service.map((item, i) => {
+            return (
+              <ListItem key={i}>
+                <Typography>
+                  {`${item.title}, ${item.venue}, ${item.date}`}
+                </Typography>
+              </ListItem>
+            );
+          })}
+      </List>
+      {subreview && (
+        <Typography style={{ paddingLeft: "2rem" }}>
+          In addition, I was a sub-reviewer for these conferences:&nbsp;
+          {subreview.join(", ")}
+        </Typography>
       )}
     </App>
   );

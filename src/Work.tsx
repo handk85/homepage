@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import Spinner from "react-bootstrap/Spinner";
 import { load } from "js-yaml";
 import { Work } from "./Types";
+import { Typography, List, ListItem } from "@mui/material";
 
 function WorkExperience() {
   const [work, setWork] = useState<Work[]>();
@@ -16,30 +16,31 @@ function WorkExperience() {
     });
   }, []);
 
-  return !work ? (
-    <Spinner animation="border" />
-  ) : (
+  return (
     <>
-      <h3>
+      <Typography variant="h5">
         <FontAwesomeIcon icon={faBriefcase} /> Work Experience
-      </h3>
-      <ul>
-        {work.map((item, i) => {
-          return (
-            <li key={i}>
-              {item.title},{" "}
-              {item.url ? (
-                <a href={item.url}>{item.affiliation}</a>
-              ) : (
-                item.affiliation
-              )}
-              , {item.city}, {item.country}, {item.begin.month}{" "}
-              {item.begin.year}&#8211;
-              {item.end ? `${item.end.month} ${item.end.year}` : "Present"}
-            </li>
-          );
-        })}
-      </ul>
+      </Typography>
+      <List>
+        {work &&
+          work.map((item, i) => {
+            return (
+              <ListItem key={i}>
+                <Typography>
+                  {item.title},{" "}
+                  {item.url ? (
+                    <a href={item.url}>{item.affiliation}</a>
+                  ) : (
+                    item.affiliation
+                  )}
+                  , {item.city}, {item.country}, {item.begin.month}{" "}
+                  {item.begin.year}&#8211;
+                  {item.end ? `${item.end.month} ${item.end.year}` : "Present"}
+                </Typography>
+              </ListItem>
+            );
+          })}
+      </List>
     </>
   );
 }

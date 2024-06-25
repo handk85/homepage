@@ -4,3 +4,6 @@ Disallow: /data/
 
 User-agent: AhrefsBot
 Disallow: /
+
+User-agent: BLEXBot
+Disallow: /

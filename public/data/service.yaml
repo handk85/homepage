@@ -1,5 +1,8 @@
 ---
 service:
+  - title: Reviewer
+    venue: "ACM Transactions on Software Engineering and Methods (TOSEM)"
+    date: Mar. 2024
   - title: Program Committee
     venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
     date: "2024"
@@ -37,7 +40,7 @@ service:
     venue: "Journal of Software: Evolution and Process (JSME)"
     date: May 2022
   - title: Reviewer
-    venue: "ACM Transactions on Software Engineering and Methods"
+    venue: "ACM Transactions on Software Engineering and Methods (TOSEM)"
     date: Mar. 2022
   - title: Proceedings Co-Chair
     venue: "Asia-Pacific Software Engineering Conference (APSEC)"
