@@ -1,5 +1,23 @@
 ---
 service:
+  - title: Program Committee
+    venue: ACM International Conference on the Foundations of Software Engineering (FSE)
+    date: "2025"
+  - title: Program Committee (Artifact Evaluation Track)
+    venue: IEEE/ACM International Conference on Software Engineering (ICSE)
+    date: "2025"
+  - title: Program Committee (Artifact Evaluation Track)
+    venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+    date: "2024"
+  - title: Industry Track Co-Chair
+    venue: International Conference on Testing Software and Systems (ICTSS)
+    date: "2024"
+  - title: Program Committee
+    venue: International Conference on Testing Software and Systems (ICTSS)
+    date: "2024"
+  - title: Program Committee
+    venue: Asia-Pacific Symposium on Internetware
+    date: "2024"
   - title: Reviewer
     venue: "ACM Transactions on Software Engineering and Methods (TOSEM)"
     date: Mar. 2024

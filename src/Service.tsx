@@ -4,11 +4,12 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { load } from "js-yaml";
 import { ServiceItem } from "./Types";
 import App from "./App";
-import { Typography, List, ListItem } from "@mui/material";
+import { Typography, List, ListItem, CircularProgress } from "@mui/material";
 
 function Service() {
-  const [service, setService] = useState<ServiceItem[]>();
-  const [subreview, setSubreview] = useState<string[]>();
+  const [servicePerYear, setServicePerYear] =
+    useState<{ [year: string]: ServiceItem[] }>();
+  const [years, setYears] = useState<string[]>();
 
   useEffect(() => {
     fetch("./data/service.yaml").then(async (response) => {
@@ -17,8 +18,21 @@ function Service() {
         service: ServiceItem[];
         subreview: string[];
       };
-      setService(data.service);
-      setSubreview(data.subreview);
+
+      const perYear = data.service.reduce((result, item) => {
+        const year: string = item.date.slice(-4);
+        result[year] = result[year] || [];
+        result[year].push(item);
+        return result;
+      }, Object.create(null));
+
+      setYears(
+        Object.keys(perYear).sort(
+          (a, b) => parseInt(b.slice(-4)) - parseInt(a.slice(-4))
+        )
+      );
+
+      setServicePerYear(perYear);
     });
   }, []);
 
@@ -27,24 +41,30 @@ function Service() {
       <Typography variant="h5">
         <FontAwesomeIcon icon={faLink} /> Service
       </Typography>
-      <List>
-        {service &&
-          service.map((item, i) => {
-            return (
-              <ListItem key={i}>
-                <Typography>
-                  {`${item.title}, ${item.venue}, ${item.date}`}
-                </Typography>
-              </ListItem>
-            );
-          })}
-      </List>
-      {subreview && (
-        <Typography style={{ paddingLeft: "2rem" }}>
-          In addition, I was a sub-reviewer for these conferences:&nbsp;
-          {subreview.join(", ")}
-        </Typography>
-      )}
+      <br />
+      <br />
+      {!years && <CircularProgress />}
+      {years &&
+        years.map((y) => {
+          return (
+            <>
+              <Typography variant="h6">{y}</Typography>
+              <List>
+                {servicePerYear &&
+                  servicePerYear[y] &&
+                  servicePerYear[y].map((item, i) => {
+                    return (
+                      <ListItem key={i}>
+                        <Typography>
+                          {`${item.title}, ${item.venue}, ${item.date}`}
+                        </Typography>
+                      </ListItem>
+                    );
+                  })}
+              </List>
+            </>
+          );
+        })}
     </App>
   );
 }
