@@ -11,14 +11,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  Button,
-  Alert,
-  Typography,
-  Divider,
-  List,
-  ListItem,
-} from "@mui/material";
+import { Button, Typography, Divider, List, ListItem } from "@mui/material";
 
 function OfficeHours() {
   return (
@@ -27,42 +20,18 @@ function OfficeHours() {
         <FontAwesomeIcon icon={faClock} /> Office Hours
       </Typography>
       <br />
-      <Alert
-        severity="info"
-        sx={{
-          fontSize: 20,
-          "& .MuiAlert-icon": {
-            fontSize: "30px",
-          },
-        }}
-      >
-        I have flexible timeslots as the term is over. Please email me to
-        schedule a meeting
-      </Alert>
-      <br />
       <Typography>
-        <b>
-          <s>14:00&#8211;16:00 Every Wednesday (Academic Year 2023/24)</s>
-        </b>
+        <b>13:00&#8211;15:00 Every Tuesday (Academic Year 2024/25)</b>
       </Typography>
       <List>
         <ListItem>
           <Typography>
-            <s>Use the below button to book a slot</s>
+            You can choose specific type of meetings (e.g., modules, personal
+            tutor, and others)
           </Typography>
         </ListItem>
         <ListItem>
-          <Typography>
-            <s>
-              You can choose specific type of meetings (e.g., modules, personal
-              tutor, and others)
-            </s>
-          </Typography>
-        </ListItem>
-        <ListItem>
-          <Typography>
-            <s>Please add a note of the meeting agenda</s>
-          </Typography>
+          <Typography>Please add a note of the meeting agenda</Typography>
         </ListItem>
         <ListItem>
           <Typography>
@@ -76,9 +45,8 @@ function OfficeHours() {
         </ListItem>
       </List>
       <Button
-        href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink"
+        href="https://outlook.office365.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink"
         startIcon={<FontAwesomeIcon icon={faCalendarPlus} />}
-        disabled
       >
         Book a slot
       </Button>
