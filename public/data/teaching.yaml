@@ -2,6 +2,9 @@
 - course: CS2800 Software Engineering
   school: Royal Holloway, University of London
   date: 2024/25
+- course: COMP0010 Software Engineering
+  school: University College London (UCL)
+  date: 2024/25
 - course: CS1821/CS1822/DC1821 Programming Laboratory
   school: Royal Holloway, University of London
   date: 2024/25
@@ -36,8 +39,8 @@
   school: Singapore Data Science Consortium
   date: 2020/21
 - course: Introduction to Scientific Programming in Python (TA)
-  school: UCL
+  school: University College London (UCL)
   date: 2015/16
 - course: Tools and Environment (TA)
-  school: UCL
+  school: University College London (UCL)
   date: 2014/15
