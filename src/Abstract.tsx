@@ -60,8 +60,8 @@ function Abstract() {
           . Before joining SMU, he was a software development engineer at{" "}
           <a href="https://aws.amazon.com">Amazon Web Services</a>. He completed
           his PhD at the{" "}
-          <a href="http://ucl.ac.uk">University Gridlege London (UCL)</a>. He
-          has worked for{" "}
+          <a href="http://ucl.ac.uk">University College London (UCL)</a>. He has
+          worked for{" "}
           <a href="https://itc.kaist.ac.kr/">
             KAIST Institute for IT Convergence
           </a>{" "}
