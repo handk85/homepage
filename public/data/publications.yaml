@@ -1,4 +1,46 @@
 ---
+- id: Yang24TSE
+  author:
+    - family: Yang
+      given: Zhou
+    - family: Zhao
+      given: Zhipeng
+    - family: Wang
+      given: Chenyu
+    - family: Shi
+      given: Jieke
+    - family: Kim
+      given: Dongsun
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  title: "Gotcha! This Model Uses My Code! Evaluating Membership Leakage Risks in Code Models"
+  journal: IEEE Transactions on Software Engineering
+  year: 2024
+  type: journal
+- id: He24EMSE
+  author:
+    - family: He
+      given: Junda
+    - family: Xu
+      given: Bowen
+    - family: Yang
+      given: Zhou
+    - family: Han
+      given: DongGyun
+    - family: Yang
+      given: Chengran
+    - family: Liu
+      given: Jiakun
+    - family: Zhao
+      given: Zhipeng
+    - family: Lo
+      given: David
+  title: "PTM4Tag+: Tag Recommendation of Stack Overflow Posts with Pre-trained Models"
+  journal: Emprical Software Engineering
+  year: 2024
+  type: journal
 - id: Zhous24ICSE
   author:
     - family: Zhou
