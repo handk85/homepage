@@ -1,4 +1,16 @@
 ---
+- id: Zhous24ICSE
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  journal: Emprical Software Engineering
+  title: "Bridging Expert Knowledge with Deep Learning Techniques for Just-In-Time Defect Prediction"
+  year: 2024
+  type: journal
 - id: Yang24TSE
   author:
     - family: Yang
