@@ -21,7 +21,7 @@ function OfficeHours() {
       </Typography>
       <br />
       <Typography>
-        <b>13:00&#8211;15:00 Every Tuesday (Academic Year 2024/25)</b>
+        <b>14:00&#8211;16:00 Every Tuesday (Term 2, Academic Year 2024/25)</b>
       </Typography>
       <List>
         <ListItem>
