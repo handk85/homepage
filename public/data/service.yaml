@@ -3,6 +3,9 @@ service:
   - title: Program Committee
     venue: ACM International Conference on the Foundations of Software Engineering (FSE)
     date: "2025"
+  - title: Program Committee
+    venue: Mining Software Repositories (MSR) Conference
+    date: "2025"
   - title: Program Committee (Artifact Evaluation Track)
     venue: IEEE/ACM International Conference on Software Engineering (ICSE)
     date: "2025"

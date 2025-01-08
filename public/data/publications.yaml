@@ -7,7 +7,7 @@
       given: DongGyun
     - family: Lo
       given: David
-  journal: Emprical Software Engineering
+  journal: Empirical Software Engineering
   title: "Bridging Expert Knowledge with Deep Learning Techniques for Just-In-Time Defect Prediction"
   year: 2024
   type: journal
@@ -50,7 +50,7 @@
     - family: Lo
       given: David
   title: "PTM4Tag+: Tag Recommendation of Stack Overflow Posts with Pre-trained Models"
-  journal: Emprical Software Engineering
+  journal: Empirical Software Engineering
   year: 2024
   type: journal
 - id: Zhous24ICSE
