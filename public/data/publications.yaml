@@ -11,6 +11,30 @@
   title: "Bridging Expert Knowledge with Deep Learning Techniques for Just-In-Time Defect Prediction"
   year: 2024
   type: journal
+- id: Zhou24TSE
+  author:
+    - family: Zhou
+      given: Xin
+    - family: Xu
+      given: Bowen
+    - family: Kim
+      given: Kisub
+    - family: Han
+      given: DongGyun
+    - family: Nguyen
+      given: Hung Huu
+    - family: Le-Cong
+      given: Thanh
+    - family: He
+      given: Junda
+    - family: Le
+      given: Bach
+    - family: Lo
+      given: David
+  title: "Leveraging Large Language Model for Automatic Patch Correctness Assessment"
+  journal: IEEE Transactions on Software Engineering
+  year: 2024
+  type: journal
 - id: Yang24TSE
   author:
     - family: Yang
