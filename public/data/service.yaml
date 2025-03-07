@@ -1,6 +1,9 @@
 ---
 service:
   - title: Program Committee
+    venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+    date: "2025"
+  - title: Program Committee
     venue: ACM International Conference on the Foundations of Software Engineering (FSE)
     date: "2025"
   - title: Program Committee
