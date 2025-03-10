@@ -1,10 +1,16 @@
 ---
 service:
   - title: Program Committee
+    venue: IEEE/ACM International Conference on Software Engineering (ICSE)
+    date: "2026"
+  - title: Program Committee
     venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
     date: "2025"
   - title: Program Committee
     venue: ACM International Conference on the Foundations of Software Engineering (FSE)
+    date: "2025"
+  - title: Program Committee
+    venue: International Workshop on Envisioning the AI-Augmented Software Development Life Cycle (AI-SDLC)
     date: "2025"
   - title: Program Committee
     venue: Mining Software Repositories (MSR) Conference
