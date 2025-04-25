@@ -1,4 +1,15 @@
 ---
+- id: Bee25
+  author:
+    - family: Bee
+      given: Daniel
+    - family: Han
+      given: DongGyun
+  title: Visualising Developer Interactions in Code Reviews
+  booktitle: The ACM International Conference on Foundations of Software Engineering (FSE)
+  note: Demonstrations Track
+  year: 2025
+  type: conference
 - id: Zhous24ICSE
   author:
     - family: Zhou
