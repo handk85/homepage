@@ -115,8 +115,6 @@ function Home() {
     <App>
       <Abstract />
       <Divider sx={{ my: 2 }} />
-      <OfficeHours />
-      <Divider sx={{ my: 2 }} />
       <Contact />
     </App>
   );
