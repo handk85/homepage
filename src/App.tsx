@@ -104,12 +104,13 @@ function App(props: any) {
             </div>
             <footer style={{ marginTop: "1rem", marginBottom: "2rem" }}>
               <Divider sx={{ my: 2 }} />
-              <Typography textAlign="center">
-                &copy; 2024 DongGyun Han. The&nbsp;
+              <Typography>
+                Copyright &copy; {new Date().getFullYear()} DongGyun Han. All
+                rights reserved. The&nbsp;
                 <a href="https://github.com/handk85/homepage">
                   source code of this homepage
                 </a>
-                &nbsp;is available at Github. Please feel free to extend it for
+                &nbsp;is available at GitHub. Please feel free to extend it for
                 your own homepage.
               </Typography>
             </footer>

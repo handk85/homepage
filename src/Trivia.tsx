@@ -1,5 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMusic, faGuitar, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMusic,
+  faGuitar,
+  faGlobe,
+  faFire,
+} from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import {
   Grid,
@@ -45,19 +50,19 @@ function Music() {
       </Typography>
       <br />
       <Grid container>
-        <Grid md={4} xs={12}>
-          <Card sx={{ maxWidth: "360px" }}>
-            <CardMedia sx={{ maxWidth: "360px", maxHeight: "360px" }}>
-              <img src="./dk.jpg" alt="In a gig" style={{ width: "360px" }} />
+        <Grid md={5} xs={12}>
+          <Card sx={{ maxWidth: "430px" }}>
+            <CardMedia sx={{ maxWidth: "430px", maxHeight: "430px" }}>
+              <img src="./dk.jpg" alt="In a gig" style={{ width: "430px" }} />
             </CardMedia>
+            <CardContent>
+              <Typography>
+                Hope and Anchor, London, UK, 25 August 2016
+              </Typography>
+            </CardContent>
           </Card>
-          <CardContent>
-            <p className="text-secondary">
-              Hope and Anchor, London, UK, 25 August 2016
-            </p>
-          </CardContent>
         </Grid>
-        <Grid md={8} xs={12}>
+        <Grid md={7} xs={12}>
           <Typography>
             In my free time, I love to play musical instruments. I mostly play
             electric guitar, but I also can play acoustic guitar, bass, and
@@ -192,10 +197,57 @@ function Island() {
   );
 }
 
+function Hell() {
+  return (
+    <>
+      <Typography variant="h5">
+        <FontAwesomeIcon icon={faFire} /> Unexpected vacation in Hell
+      </Typography>
+      <br />
+      <Typography variant="body1">
+        My flight was cancelled, so I have to stay in Hell for four days.
+      </Typography>
+      <br />
+      <Grid container>
+        <Grid md={5} xs={12}>
+          <Card sx={{ maxWidth: "430px" }}>
+            <CardMedia sx={{ maxWidth: "430px", maxHeight: "430px" }}>
+              <img
+                src="./hell.jpeg"
+                alt="In a gig"
+                style={{ width: "430px" }}
+              />
+            </CardMedia>
+            <CardContent>
+              <Typography>The Hell sign, Hell, Norway, 28 June 2025</Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid md={7} xs={12}>
+          <Typography>
+            After attending FSE 2025, I was supposed to fly to London (via Oslo)
+            on 27th June, Friday. However, the flight from Trondheim to Oslo was
+            suddenly cancelled&mdash;likely due to a technical issue&mdash;and
+            all subsequent flights were fully booked. The airline arranged a
+            hotel in Hell, a small town right next to Trondheim Airport, and
+            rebooked my flight for 30th June, Monday.
+          </Typography>
+          <Typography>
+            Surprisingly, the town is a really peaceful place&mdash;more like
+            heaven.
+          </Typography>
+        </Grid>
+      </Grid>
+    </>
+  );
+}
+
 function Trivia() {
   return (
     <App>
       <Island />
+      <Divider sx={{ my: 4 }} />
+      <Hell />
       <Divider sx={{ my: 4 }} />
       <Music />
     </App>
