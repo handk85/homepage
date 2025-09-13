@@ -21,15 +21,9 @@ function OfficeHours() {
       </Typography>
       <br />
       <Typography>
-        <b>14:00&#8211;16:00 Every Tuesday (Term 2, Academic Year 2024/25)</b>
+        <b>13:00&#8211;15:00 Every Tuesday (Term 1, Academic Year 2025/26)</b>
       </Typography>
       <List>
-        <ListItem>
-          <Typography>
-            You can choose specific type of meetings (e.g., modules, personal
-            tutor, and others)
-          </Typography>
-        </ListItem>
         <ListItem>
           <Typography>Please add a note of the meeting agenda</Typography>
         </ListItem>
@@ -45,7 +39,7 @@ function OfficeHours() {
         </ListItem>
       </List>
       <Button
-        href="https://outlook.office365.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk?anonymous&ep=plink"
+        href="https://outlook.office.com/bookwithme/user/2817d6351c804d8fbb61ccd7023a0a93@rhul.ac.uk/meetingtype/DmCx7OHN5EuX7LhBlEecug2?anonymous&ismsaljsauthenabled&ep=mlink"
         startIcon={<FontAwesomeIcon icon={faCalendarPlus} />}
       >
         Book a slot
@@ -114,6 +108,8 @@ function Home() {
   return (
     <App>
       <Abstract />
+      <Divider sx={{ my: 2 }} />
+      <OfficeHours />
       <Divider sx={{ my: 2 }} />
       <Contact />
     </App>
