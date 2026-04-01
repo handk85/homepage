@@ -1,4 +1,44 @@
 ---
+- id: Shi25
+  author:
+    - family: Shi
+      given: Jieke
+    - family: Zhou
+      given: Yang
+    - family: He
+      given: Junda
+    - family: Xu
+      given: Bowen
+    - family: Kim
+      given: Dongsun
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  journal: ACM Transactions on Software Engineering and Methodology
+  title: "Finding Safety Violations of AI-Enabled Control Systems through the Lens of Synthesized Proxy Programs"
+  year: 2025
+  type: journal
+- id: Zhou25
+  author:
+    - family: Zhou
+      given: Yang
+    - family: Shi
+      given: Jieke
+    - family: Hilmi Asyrofi
+      given: Muhammad
+    - family: Xu
+      given: Bowen
+    - family: Zhou
+      given: Xin
+    - family: Han
+      given: DongGyun
+    - family: Lo
+      given: David
+  journal: ACM Transactions on Software Engineering and Methodology
+  title: "Prioritizing Speech Test Cases"
+  year: 2025
+  type: journal
 - id: Bee25
   author:
     - family: Bee
